@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midías em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Use algum dispositivo diferente ou diminua e aumente o tamanho do navegador.</p>
+    <picture>
+        <source media="(min-width: 1025px)" srcset="images/foto-g.png" type="image/png">
+        <source media="(min-width: 725px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-p.png" alt="Foto pequena">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <audio preload="none" src="audio/smokeys-lounge-tracktribe.mp3" controls loop></audio>
+    <br>
+    <audio preload="metadata" controls>
+        <source src="audio/smokeys-lounge-tracktribe.mp3" type="audio/mpeg">
+        <source src="audio/smokeys-lounge-tracktribe.wav" type="audio/wav">
+        <source src="audio/smokeys-lounge-tracktribe.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta o áudio, <a href="audio/smokeys-lounge-tracktribe.mp3">tente baixar</a></p>
+    </audio>
+</body>
+</html>
