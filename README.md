@@ -10,5 +10,5 @@ e no canal [Curso em Vídeo](https://www.youtube.com/c/CursoemV%C3%ADdeo) no You
 ## Organização dos arquivos
 Estão divididos em 3 partes
 - pratic tem as pastas e arquivos de praticas feitos em video
-- pratic 2 tem os desafios do repositório de [HTML e CSS](https://github.com/gustavoguanabara/html-css) feitos por mim
+- pratic 2 tem os desafios feitos por mim do repositório de [HTML e CSS](https://github.com/gustavoguanabara/html-css) do Gustavo Guanabara
 - test tem os testes que eu faço com as linguagens HTML e CSS
