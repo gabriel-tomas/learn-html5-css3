@@ -13,8 +13,26 @@ h1#principal {
     color: rgb(2, 2, 83);
     text-align: center;
     font: bold 2.6em 'Times New Roman', Times, serif;
+    color:red;
 }
 
 h2 {
     color: rgba(58, 58, 189, 0.87);
 }
+
+.basico {
+    color: rgb(81, 118, 160);
+}
+
+.intermediario {
+    color: rgb(131, 81, 160);
+}
+
+.avancado {
+    color: rgb(165, 81, 160);
+}
+
+.destaque {
+    background-color: rgba(236, 137, 101, 0.712);
+}
+
