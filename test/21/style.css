@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.925em;
+    background-color: #CB25F5;
+    margin: auto;
+    width: 690px;
+}
+
+img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main {
+    background-color: white;
+    width: 670px;
+    padding-inline: 10px;
+    border-radius: 10px;
+}
+
+div {
+    border-radius: 10px;
+}
+
+div > div, a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.second {
+    width: 150px;
+    height: 60px;
+    border: 2px solid black;
+}
+
+#home {
+    width: 200px;
+    height: 60px;
+    background-color: #2C0836;
+    border: 2px solid black;
+}
+
+#back-div {
+    width: 675px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+#lado1 {
+    background-color: #611275;
+}
+
+#lado1:hover, #lado2:hover, #lado3:hover {
+    background-color: #6e1585;
+    width: 147px;
+    height: 57px;
+    line-height: 57px;
+}
+
+#home:hover {
+    width: 197px;
+    height: 57px;
+    line-height: 57px;
+}
+
+#lado2 {
+    background-color: #611275;
+}
+
+#lado3 {
+    background-color: #611275;
+}
+
+#main-place > h1 {
+    font: italic 900 3.2em "Playfair Display", serif;
+    color: #e4caeb;
+    padding: 50px;
+    text-align: center;
+}
+
+
+#main-place {
+    background-color: #2C0836;
+    width: 690px;
+}
