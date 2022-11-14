@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&family=Galada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0%;
+    font-family: "Commissioner", sans-serif;
+}
+
+main {
+    padding-inline: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+#main-title {
+    text-align: center;
+    background-color: #717348;
+    font-family: "Fanwood Text", serif;
+    width: 100vw;
+    margin-top: 0%;
+    height: 100px;
+    line-height: 95px;
+    color: #EFF299;
+    font-size: 3.4em;
+    text-shadow: 4px 4px 2px #EFF29975;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.815);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

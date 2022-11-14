@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;700;800&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0px;
+    background-color: #038C7F;
+}
+
+img {
+    width: 60vw;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 60px;
+    float: right;
+    padding-block: 10px;
+    padding-inline-start: 20px;
+}
+
+#back-main {
+    background-color: #420001;
+    margin-bottom: 10px;
+}
+
+#main-title {
+    background-color: #A04229;
+    width: 50vw;
+    border: 10px solid rgba(0, 0, 0, 0.527);
+    margin: auto;
+    margin-top: 0px;
+    line-height: 130px;
+    font-family: "Baloo Bhaijaan 2", cursive;
+    font-weight: 900;
+    font-size: 2.26em;
+    color: #f0f0f0;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.589);
+    text-align: center;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.205);
+}
+
+#back-img-main {
+    background-color: #420001;
+    width: 88vw;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 15px;
+    float: right;
+
+}
+
+#back-img-main > p {
+    color: rgb(189, 189, 189);
+    text-align: justify;
+    padding-inline-start: 20px;
+    padding-block-end: 30px;
+}
