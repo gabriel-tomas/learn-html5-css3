@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        a {
+            color: rgb(230, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(192, 0, 0);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color:rgb(255, 142, 142);
+        }
+
+        a::before {
+            content: "→ ";
+        }
+
+        a::after {
+            content: " ←";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/ratohg" target="_blank">GitHub</a></li>
+        <li><a href="https://www.codewars.com/users/ratohg" target="_blank">CodeWars</a></li>
+        <li><a href="https://replit.com/@ratohg" target="_blank">Replit</a></li>
+        <li><a href="https://github.com/sponsors" target="_blank">GitHub Sponsors</a></li>
+    </ul>
+</body>
+</html>
