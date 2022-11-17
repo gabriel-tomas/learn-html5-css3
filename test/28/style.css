@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body {
+    margin: 0%;
+}
+
+main {
+    width: 80%;
+    margin-left: 1%;
+    padding: 3px;
+    border-right: 1px dashed black;
+    display: inline-block;
+}
+
+main > p {
+    text-align: justify;
+    padding-right: 10px;
+}
+
+main > ul > li:hover {
+    background-color: #eea77f;
+    width: fit-content;
+    text-decoration: underline;
+}
+
+main > p > a {
+    color: #F25C05;
+}
+
+main > p > a:visited {
+    color: #c04a06
+}
+
+.shelf-item {
+    background-color: #F25C05;
+    border-radius: 10px;
+    border: 2px solid #883302;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.shelf-item:hover {
+    background-color: #c04a05;
+    cursor: pointer;
+}
+
+#header-shelf-items {
+    background-color: #8C5627;
+    padding: 6px;
+}
+
+#header-title {
+    background-color: #0E403B;
+    border-bottom: 1px solid black;
+    height: 200px;
+    line-height: 200px;
+    color: #F2F2F2;
+    text-align: center;
+    font-size: 3em;
+    margin: 0%;
+    padding: 1px;
+    
+}
+
+#header-title > h1 {
+    width: 600px;
+    margin: auto;
+    display: inline-block;
+}
+
+#logo {
+    background-color: #F25C05;
+    box-shadow: 3px 0px 3px rgb(0, 0, 0);
+    height: 130px;
+    line-height: 130px;
+    border-radius: 100px;
+    transform: rotate(-7deg);
+    padding: 2px;
+    float: left;
+    margin-inline: 3%;
+    margin-block: 2%;
+}
+
+#logo-back {
+    background-image: linear-gradient(to right, #8C5627, #F25C05);
+    border-radius: 60px;
+    box-shadow: 3px 0px 3px rgb(0, 0, 0);
+    width: 200px;
+    height: 140px;
+    line-height: 140px;
+    display: inline-block;
+}
+
+#other-content {
+    background-color: #025159;
+    margin-right: 0%;
+    width: 15vw;
+    display: inline-block;
+    margin: 1%;
+}
+
+#other-content > ul > li {
+    height: 40px;
+    color: #d8d8d8;
+}
+
+#other-content > ul > li:hover {
+    background-color: #F25C05;
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+#content {
+    width: 100vw;
+}
