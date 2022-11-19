@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.text-align {
+    text-align: center;
+}
+
+#d1 {
+    background-color: blue;
+    height: 80vh;
+    padding: 80px;
+}
+
+#d2 {
+    background-color: red;
+    height: 500px;
+    margin: 0px;
+    border: 5px solid black;
+    padding: 0px;
+    outline: 5px dashed yellow;
+}
+
+#d3 {
+    background-color: green;
+    height: 300px;
+}
