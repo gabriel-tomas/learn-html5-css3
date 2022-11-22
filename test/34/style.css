@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto";
+    margin: 0px;
+}
+
+header {
+    padding-inline: 50px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2D2B2E;
+}
+
+header > h1, header > nav {
+    margin-block: 0px;
+    display: inline-block;
+}
+
+input {
+    float: right;
+}
+
+input:hover {
+    cursor: pointer;
+    animation-name: opacity;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+header > nav {
+    float: right;
+    margin-top: 7px;
+    margin-right: 15px;
+}
+
+header > nav > a {
+    color: #39373B;
+    text-decoration: none;
+    font-weight: 300;
+    margin-inline: 8px;
+}
+
+header > nav > a:hover {
+    background-color: #78727a3b;
+    border-radius: 20px;
+    animation-name: scale;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+
+header > h1 {
+    font-weight: 200;
+    color: #39373B;
+}
+
+header > input {
+    background-color: #39373B;
+    border-radius: 5px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    color: white;
+    border: none;
+}
+
+main {
+    padding-inline: 50px;
+}
+
+main > h1 {
+    display: inline-block;
+    margin-top: 120px;
+    width: 30vw;
+    margin-bottom: 0px;
+    color: #322F33;
+    font-size: 5em;
+    font-weight: 900;
+}
+
+main > img {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+main > img {
+    animation-name: to-left;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transform: translateX(60vw);
+}
+
+main > p {
+    font-weight: 300;
+}
+
+
+@keyframes to-left {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes scale {
+    to {
+        margin-inline: -5px;
+        padding-inline: 13px;
+        padding-block: 9px;
+    }
+}
+
+@keyframes opacity {
+    to {
+        opacity: 88%;
+    }
+}
+
