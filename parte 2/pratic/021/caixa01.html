@@ -7,22 +7,42 @@
     <title>Box Model</title>
     <style>
         h1 {
+            display: inline;
             background-color: lightgreen;
             width: 300px;
             height: 300px;
-            border-width: 10px;
+
+            /*border-width: 10px;
             border-style: solid;
-            border-color: darkblue;
-            padding-top: 20px;
+            border-color: darkblue;*/
+
+            border: 10px solid darkblue;
+
+            /*padding-top: 20px;
             padding-right: 20px;
             padding-bottom: 20px;
-            padding-left: 20px;
+            padding-left: 20px;*/
+
+            padding: 10px;
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 37px;
+            margin-left: 20px;*/
+
+            margin: 20px auto 37px auto;
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: grey;*/
+
+            outline: 5px dashed grey;
         }
 
         a {
-            border-width: 1px;
-            border-style: solid;
-            border-color: brown;
+            display: block;
+            border: 10px solid brown;
+            padding: 12px;
         }
     </style>
 </head>
