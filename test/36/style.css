@@ -15,14 +15,15 @@
 body {
     background-color: #374152;
     font-family: "Red Hat Text", sans-serif;
+    height: 100%;
 }
 
 .header {
-    border-bottom: 1px solid #A6C4F7;
+    border-bottom: 1px solid #DED9D9;
 }
 
 .header-content {
-    margin: 15px 180px;
+    padding: 15px 180px;
     color: #DED9D9;
 }
 
@@ -45,7 +46,8 @@ body {
     color: #DED9D9;
     padding-block: 12px;
     padding-inline: 20px;
-    border-radius: 10px;
+    border-radius: 7px;
+    margin-inline: 2px;
 }
 
 .header-content-menu-item:hover {
@@ -60,8 +62,8 @@ body {
     display: inline-block;
     color: #FFF;
     margin-top: 110px;
-    animation-name: to-right;
-    animation-duration: 6s;
+    animation-name: to-original-position;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     transform: translateX(-80vw);
 }
@@ -90,8 +92,8 @@ body {
     width: 370px;
     position: absolute;
     transform: translateX(80vw);
-    animation: zoom 5s forwards;
-    
+    animation: to-original-position 3s forwards;
+    animation-delay: 1s;
 }
 
 .footer {
@@ -108,29 +110,204 @@ body {
     color: white;
 }
 
-@keyframes to-right {
+@keyframes to-original-position {
     to {
         transform: translateX(0px);
     }
 }
 
-@keyframes to-left {
-    to {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes zoom {
-    to {
-        transform: translateX(0px);
-    }
-}
 
 @keyframes shadow {
     to {
         background-color: rgba(255, 255, 255, 0.116);
-        color: rgb(26, 26, 26);
+    }
+}
+
+@keyframes text-shadow {
+    to {
+        color: rgba(255, 255, 255, 0.116);
+    }
+}
+
+/* Work */
+
+
+.main-about {
+    margin-top: 100px;
+    color: #FFF;
+    padding: 30px;  
+}
+
+.main-aboutme, .main-tecnologies {
+    transform: translateX(-80vw);
+    animation: to-original-position 3s forwards;
+    font-weight: 300;
+    font-size: 5em;
+}
+
+.main-aboutme-paragraph, .main-tecnologies-paragraph {
+    transform: translateY(180vw);
+    animation: to-original-position 5s forwards;
+    font-weight: 300;
+    font-size: 1.7em;
+}
+
+.main-work {
+    margin: 0px;
+}
+
+.main-section1 {
+    padding-top: 33px;
+    margin-inline: 255px;
+    color: white;
+}
+
+/*.main-section1-divPython {
+   margin-top: 33px;
+}*/
+
+.main-section-divlanguage-image {
+    display: inline-block;
+    width: 140px;
+}
+
+.main-section-divlanguage-title {
+    position: relative;
+    bottom: 60px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 3.05em;
+    margin-left: 25px;
+}
+
+.main-section-subjectwork {
+    margin-top: 50px;
+}
+
+.main-section-subjectwork-divwrite {
+    display: inline-block;
+    width: 400px;
+}
+
+.main-section-subjectwork-divwrite-subtitle {
+    font-weight: 400;
+    font-size: 3.15em;
+    margin-bottom: 15px;
+}
+
+.main-section-subjectwork-divwrite-subtitle-paragraph {
+    font-weight: 300;
+    font-size: 1.78em;
+    margin-bottom: 6px;
+}
+
+.main-section-subjectwork-divwrite-link {
+    color: white;
+    font-weight: 300;
+    font-size: 1.35em;
+    opacity: 60%;
+}
+
+.main-section-subjectwork-divwrite-link:hover {
+    animation: text-shadow 0.5s forwards;
+}
+
+.main-section-subjectwork-divimages {
+    display: inline-block;
+    position: relative;
+    bottom: 60px;
+    float: right;
+}
+
+.main-section-subjectwork-divimages-itemimg {
+    margin-top: 20px;
+    display: block;
+    width: 330px;
+    border-radius: 5px;
+}
+
+.main-section2 {
+    margin-block: 26vh;
+    margin-inline: 255px;
+    color: white;
+}
+
+#main-section2-arkanoid {
+    position: relative;
+    top: 5px;
+}
+
+#finish-Python {
+    width: 35vw;
+    margin: auto;
+}
+
+.main-section3 {
+    margin-block: 26vh;
+    margin-inline: 255px;
+    color: white;
+}
+
+.html-css-logo {
+    width: 280px;
+}
+
+#main-section3-Site-test {
+    width: 450px;
+}
+
+.main-contacts {
+    margin-top: 25vh;
+}
+
+.main-contacts-contact {
+    display: inline-block;
+    margin-right: 75px;
+}
+
+.main-contacts-contact-image {
+    width: 300px;
+    animation: zoom-in 0.2s forwards;
+}
+
+.main-contacts-contact-image:hover {
+    animation: zoom-out 0.7s forwards;
+}
+
+.main-contacts-contact-link {
+    display: block;
+    text-align: right;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.last-item-contact {
+    margin-right: 0px;
+}
+
+#codewars-border-radius {
+    border-radius: 200px;
+}
+
+@keyframes zoom-out {
+    to {
+        margin-top: -20px;
+        transform: scale(120%);
+        margin-bottom: 20px;
     }
 }
 
 
+@keyframes zoom-in {
+    from {
+        margin-top: -20px;
+        transform: scale(120%);
+        margin-bottom: 20px;
+    }
+    to {
+        transform: scale(100%);
+        margin-block: 0px;
+    }
+}
