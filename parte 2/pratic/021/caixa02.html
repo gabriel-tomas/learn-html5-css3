@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: grey;
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            border-radius: 8px;
+            color: black;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            margin-inline: 20px;
+        }
+
+        header > h1 {
+            text-align: center;
+            font-size: 3em;
+        }
+
+        nav {
+            background-color: rgb(78, 78, 78);
+            border-radius: 8px;
+            padding: 10px;
+            margin-inline: 40px;
+        }
+
+        nav > a {
+            color: rgb(230, 230, 230);
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            background-color: lightgrey;
+            border-radius: 5px;
+            color: rgb(39, 39, 39);
+        }
+
+        article {
+            margin: auto;
+            margin-bottom: 30px;
+            background-color: lightgrey;
+            border-radius: 8px;
+            padding: 3px 20px;
+            margin-inline: 40px;
+        }
+        
+        article > aside {
+            display: inline-block;
+            background-color: rgb(192, 192, 192);
+            padding: 3px 10px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin-bottom: 4px;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 8px;
+            color: black;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-inline: 20px;
+        }
+
+        footer {
+            background-color: rgb(68, 68, 68);
+            color: rgb(212, 212, 212);
+            text-align: center;
+            margin: 0px;
+            margin-top: 30px;
+            padding-block: 2px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Item do Menu 1</a>
+            <a href="#">Item do Menu 2</a>
+            <a href="#">Item do Menu 3</a>
+            <a href="#">Item do Menu 4</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto1">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h3>Brasil ganha da servia de 2 a 0</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore ut veniam eaque sint numquam! Id beatae dolores, obcaecati, aspernatur suscipit aliquid qui cumque, ducimus laudantium temporibus delectus velit necessitatibus!</p>
+                <aside><a href="#">Neymar se machuca e diz que ira voltar somente nas oitavas</a></aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por ratohg &copy;</p>
+    </footer>
+</body>
+</html>
