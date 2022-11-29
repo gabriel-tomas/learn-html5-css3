@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+
+    margin: 0;
+    font-family: "Nunito Sans";
+}
+
+header {
+    background-color: #F58C14;
+    margin-bottom: 10px;
+}
+
+header > h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 2.6em;
+    font-weight: 900;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #8F510B;
+    text-align: center;
+    padding-block: 10px;
+    font-size: 1.2em;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    background-color: #CC914E;
+    padding: 5px 6px;
+    border-radius: 5px;
+}
+
+nav > a:hover {
+    background-color: #cc914eb4;
+}
+
+main {
+    padding: 0px 31px;
+    margin: auto;
+}
+
+section {
+    background-color: #CC914E;
+    display: inline-block;
+    width: 80vw;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+article {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+}
+
+article > p {
+    display: inline-block;
+    width: 60vw;
+    margin: 0;
+}
+
+article > aside {
+    display: inline-block;
+    background-color: #CC914E;
+    border-radius: 5px;
+    padding: 3px;
+    color: #54504C;
+    width: 16vw;
+    position: relative;
+    top: 12px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #87817A;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    display: inline-block;
+    background-color: #C27010;
+    border-radius: 30px;
+    color: #FFF;
+    font-size: 2.13em;
+    padding-inline: 60px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #CC914E;
+    margin: 0;
+}
+
+#aside-relacioned {
+    display: inline-block;
+    background-color: #F58C14;
+    border-radius: 5px;
+    width: 12vw;
+    position: relative;
+    bottom: 440px;
+    float: right;
+}
+
+
+li {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: #CC914E;
+    border-radius: 3px;
+}
+
