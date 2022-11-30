@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(-15deg, #333236, #8C8A54);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+h1 {
+    font-family: "Righteous", sans-serif;
+    color: #f0eec6e3;
+    font-size: 2.3em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: "Sulphur Point";
+    color: #f0eec6e3;
+    font-size: 1.3em;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px;
+    background-color: #DAD898;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #cac88d;
+}
+
+button:active {
+    background-color: #DAD898;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-top: 0.2px solid #FFFDC0;
+    padding-top: 110px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: #DAD898;
+    font-size: 4.5em;
+    font-family: "Arvo", serif;
+}
+
+h3 {
+    color: #DAD898;
+    font-size: 1.5em;
+}
+
+img {
+    border-radius: 300px;
+    width: 400px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    border-top: 0.4px solid #DAD898;
+    padding-top: 20px;
+    font-family: "Domine";
+}
+
+footer > a {
+    color: #DAD898;
+    text-decoration: none;
+    padding: 3px;
+}
+
+footer > a:hover {
+    background-color: #8c8a5433;
+    color: #DAD898;
+    border-radius: 6px;
+    text-decoration: underline;
+}
+
+p {
+    color: #DAD898;
+}
+
