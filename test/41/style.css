@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FDFDFD;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    color: #FDFDFD;
+    background-color: #556BB8;
+    padding-block: 8px;
+}
+
+input, label {
+    display: none;
+}
+
+label {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#menu-button-nav {
+    display: none;
+}
+
+header > h1 {
+    font-weight: 900;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 30px;
+}
+
+header > nav > a {
+    color: #FDFDFD;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    color: #434AA1;
+    margin-left: 100px;
+}
+
+main > div > h2 {
+    font-family: "Righteous", cursive;
+    font-size: 3em;
+}
+
+main > div > h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    color: #556BB8;
+}
+
+main > img {
+    width: 45vw;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #5679BF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Poppis", sans-serif;
+    gap: 0px 20px;
+    padding: 4px;
+    margin-top: 20px;
+}
+
+footer > a {
+    color: black;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1360px) {
+    main {
+        margin-top: 70px;
+    }
+
+    main > img {
+        width: 40vw;
+        border-radius: 20px;
+    }
+
+    main > div > h2 {
+        font-family: "Righteous", cursive;
+        font-size: 2.5em;
+    }
+    
+    main > div > h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.1em;
+        color: #556BB8;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1060px) {
+
+    main > img {
+        width: 40vw;
+    }
+    main > div > h2 {
+        font-size: 2.3em;
+    }
+    
+    main > div > h3 {
+        font-size: 1.1em;
+    }
+    main > div {
+        margin-left: 50px;
+    }
+
+    footer {
+        margin-top: 140px;
+    }
+}
+
+@media (max-width: 960px) {
+    main > img {
+        width: 43vw;
+    }
+    main > div > h2 {
+        font-size: 2.2em;
+    }
+    
+    main > div > h3 {
+        font-size: 1em;
+    }
+    main > div {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 890px) {
+    main > img {
+        width: 43vw;
+    }
+    main > div > h2 {
+        font-size: 2.3em;
+    }
+    
+    main > div > h3 {
+        font-size: 0.9em;
+    }
+    main > div {
+        margin-left: 30px;
+    }
+    
+    footer {
+        margin-top: 180px;
+    }
+}
+
+@media (max-width: 840px) {
+    main > img {
+        width: 43vw;
+    }
+    main > div > h2 {
+        font-size: 2.1em;
+    }
+    
+    main > div > h3 {
+        font-size: 0.87em;
+    }
+    main > div {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 780px) {
+    main > img {
+        width: 50vw;
+    }
+    main > div > h2 {
+        font-size: 2em;
+        width: 43vw;
+    }
+    
+    main > div > h3 {
+        font-size: 0.82em;
+        width: 35vw;
+    }
+    main > div {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    #menu {
+        display: none;
+    }
+
+    label {
+        display: flex;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 0px 120px;
+    }
+
+    input:checked ~ #menu-button-nav {
+        background-color: #556BB8;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        display: block;
+        font-size: 1.4em;
+        border-top: 1px solid white;
+    }
+
+    input:checked ~ #menu-button-nav > a {
+        display: flex;
+        padding: 30px;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main > div > h2 {
+        font-size: 3em;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    main > div > h3 {
+        font-size: 1.3em;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    main > img {
+        width: 100%;
+        margin-top: 70px;
+    }
+}
+
