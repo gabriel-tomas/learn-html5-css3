@@ -37,6 +37,15 @@ header {
     opacity: 60%;
     padding: 5px 10px;
     border-radius: 8px;
+    animation: opcty2 0.3s forwards;
+}
+
+.header-menu-link:hover {
+    animation: opcty 0.6s forwards;
+}
+
+.header-menu-link:active {
+    background-color: #fae4cf;
 }
 
 main {
@@ -77,6 +86,12 @@ main {
     color: #2B231B;
     opacity: 80%;
     font-weight: 300;
+    text-decoration: none;
+}
+
+.main-divright-start:hover {
+    text-decoration: underline;
+    animation: hover-link 0.8s forwards;
 }
 
 #header-buttonmenu2 {
@@ -93,6 +108,35 @@ main {
 
 .header-menu2 {
     display: none;
+}
+
+@keyframes hover-link {
+    to {
+        background-color: #a8896a42;
+    }
+}
+
+@keyframes opcty {
+    from {
+        opacity: 60%;
+    }
+
+    to {
+        opacity: 100%;
+        transform: scale(97%);
+    }
+}
+
+@keyframes opcty2 {
+    from {
+        opacity: 100%;
+        transform: scale(97%);
+    }
+    
+    to {
+        opacity: 60%;
+        transform: scale(100%);
+    }
 }
 
 @media (max-width: 1380px) {
@@ -124,6 +168,10 @@ main {
 
     .main-divright-image {
         width: 100%;
+    }
+
+    .main-divright-start {
+        margin-bottom: 30px;
     }
 }
 
@@ -193,3 +241,4 @@ main {
         font-size: 1.6em;
     }
 }
+
