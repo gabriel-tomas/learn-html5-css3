@@ -47,19 +47,29 @@ h1 {
     width: 327px;
     height: 60px;
     border-radius: 100px;
-    gap: 0px 44px;
+    gap: 0px 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
 }
 
-.main-account-user-image, .main-account-pass-image {
+.main-account-pass {
+    gap: 0px 32px;
+}
+
+.main-account-user-image {
     margin-left: 16.7px;
+}
+
+.main-account-pass-image {
+    margin-left: 20px;
 }
 
 .main-account-user-paragraph, .main-account-pass-paragraph {
     font-family: "M PLUS 1", sans-serif;
     font-weight: 200;
     font-size: 23px;
+    width: 207px;
+    border: none;
+    outline: none;
 }
 
 .main-frgtandtrms {
@@ -74,6 +84,11 @@ h1 {
 
 .main-frgtandtrms-link {
     align-self: flex-end;
+    color: white;
+}
+
+.main-frgtandtrms-link:active {
+    color: rgb(238, 238, 238);
 }
 
 .main-frgtandtrms-trmcndtns {
@@ -101,4 +116,73 @@ button {
     border-radius: 100px;
     margin-top: 49px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    cursor: pointer;
+    animation: opacity 0.6s forwards;
+}
+
+button:active {
+    margin-top: 51px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes opacity {
+    to {
+        opacity: 70%;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 80%;
+        height: 50%;
+        padding: 15px;
+    }
+
+    .main-account{
+        gap: 25px 0px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: 2em;
+    }
+
+    .main-account-user, .main-account-pass {
+        width: 280px;
+        height: 50px;
+    }
+
+    .main-account-user-image {
+        width: 40px;
+    }
+
+    .main-account-pass-image {
+        width: 35px;
+    }
+
+    .main-account-user-paragraph, .main-account-pass-paragraph {
+        width: 150px;
+    }
+
+    button {
+        margin-top: 29px;
+        margin-bottom: 20px;
+        width: 202px;
+        height: 43px;
+        font-size: 1.1em;
+    }
+
+    button:active {
+        margin-top: 29px;
+        animation: opacity 0.6s forwards;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #f19364;
+    }
+
+    .main-frgtandtrms {
+        font-size: .9em;
+    }
 }
