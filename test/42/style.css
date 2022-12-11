@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     margin: 0;
@@ -48,7 +48,7 @@ header {
     background-color: #fae4cf;
 }
 
-main {
+section > #content {
     display: flex;
     flex-direction: center;
     align-items: flex-start;
@@ -57,30 +57,30 @@ main {
     flex-wrap: wrap;
 }
 
-.main-text {
+.main-section1-text {
     color: #2B231B;
-    font-family: "IBM Plex Mono", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
     width: 34vw;
     font-weight: 300;
     font-size: 40px;
     opacity: 90%;
 }
 
-.main-text-emphasis {
+.main-section1-text-emphasis {
     font-size: 70px;
 }
 
-.main-divright {
+.main-section1-divright {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-divright-image {
+.main-section1-divright-image {
     margin-top: 25px;
 }
 
-.main-divright-start {
+.main-section1-divright-start {
     font-size: 25px;
     font-family: "Poppins", sans-serif;
     color: #2B231B;
@@ -89,9 +89,92 @@ main {
     text-decoration: none;
 }
 
-.main-divright-start:hover {
+.main-section1-divright-start:hover {
     text-decoration: underline;
     animation: hover-link 0.8s forwards;
+}
+
+.main-section1-divbottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section1-divbottom-title {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A8896A;
+    gap: 0px 100px;
+    padding: 80px;
+    border-top: 1px solid black;
+}
+
+.section2-divleft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 0px;
+}
+
+.section2-divleft-box {
+    display: block;
+    width: 35vw;
+}
+
+.section2-divleft-box-title {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.section2-divleft-box-image {
+    display: inline;
+}
+
+.section2-divleft-box-paragraph {
+    display: inline;
+    font-size: 16px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    color: white;
+}
+
+.section2-divright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+}
+
+.section2-divright-textpart {
+    background-color: #FFE9D4;
+    padding: 16px 34px;
+    width: 30vw;
+    border-radius: 30px;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section2-divright-textpart-title {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.section2-divright-textpart-paragraph {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 8px;
+    text-align: justify;
 }
 
 #header-buttonmenu2 {
@@ -140,37 +223,37 @@ main {
 }
 
 @media (max-width: 1380px) {
-    .main-text {
+    .main-section1-text {
         font-size: 1.8em;
     }
 
-    .main-text-emphasis {
+    .main-section1-text-emphasis {
         font-size: 1.8em;
     }
 
-    .main-divright-image {
+    .main-section1-divright-image {
         width: 70%;
     }
 }
 
 
 @media (max-width: 950px) {
-    .main-text {
+    .main-section1-text {
         font-size: 2em;
         width: 95%;
         margin-left: 10px;
         margin-bottom: 10px;
     }
 
-    .main-text-emphasis {
+    .main-section1-text-emphasis {
         font-size: 2em;
     }
 
-    .main-divright-image {
+    .main-section1-divright-image {
         width: 100%;
     }
 
-    .main-divright-start {
+    .main-section1-divright-start {
         margin-bottom: 30px;
     }
 }
@@ -214,17 +297,17 @@ main {
 }
 
 @media (max-width: 500px) {
-    main {
+    main-section1 {
         flex-direction: column-reverse;
         margin-top: -20px;
         gap: 25px 0px;
     }
 
-    .main-text {
+    .main-section1-text {
         font-size: 1.4em;
     }
 
-    .main-text-emphasis {
+    .main-section1-text-emphasis {
         font-size: 1.7em;
     }
     .header-menu2-link {
@@ -233,11 +316,11 @@ main {
 }
 
 @media (max-width: 320px) {
-    .main-text {
+    .main-section1-text {
         font-size: 1.3em;
     }
 
-    .main-text-emphasis {
+    .main-section1-text-emphasis {
         font-size: 1.6em;
     }
 }
