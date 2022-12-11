@@ -18,6 +18,7 @@ header {
     padding-block: 2px;
 }
 
+
 .header-image {
     width: 50px;
 }
@@ -25,6 +26,10 @@ header {
 .header-menu {
     display: flex;
     gap: 0px 15px;
+}
+
+.header-menu2 {
+    display: none;
 }
 
 .header-menu-link {
@@ -189,8 +194,10 @@ section > #content {
     width: 35px;
 }
 
-.header-menu2 {
-    display: none;
+
+
+.section1-divbottom-image {
+    animation: up-down 0.9s forwards infinite alternate ease-in-out;
 }
 
 @keyframes hover-link {
@@ -219,6 +226,16 @@ section > #content {
     to {
         opacity: 60%;
         transform: scale(100%);
+    }
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0px);
     }
 }
 
