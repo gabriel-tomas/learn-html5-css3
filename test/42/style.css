@@ -151,6 +151,7 @@ section > #content {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
     color: white;
+    width: fit-content;
 }
 
 .section2-divright {
@@ -171,13 +172,13 @@ section > #content {
 .section2-divright-textpart-title {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
-    font-size: 27px;
+    font-size: 22px;
 }
 
 .section2-divright-textpart-paragraph {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 8px;
     text-align: justify;
 }
@@ -193,8 +194,6 @@ section > #content {
 #header-buttonmenu2text > img {
     width: 35px;
 }
-
-
 
 .section1-divbottom-image {
     animation: up-down 0.9s forwards infinite alternate ease-in-out;
@@ -251,12 +250,45 @@ section > #content {
     .main-section1-divright-image {
         width: 70%;
     }
+
+    .section2 {
+        padding: 60px 0px 30px 20px;
+    }
+
+    .section2-divright-image {
+        width: 40vw;
+    }
+
+    .section2-divright {
+        margin-left: 0px;
+    }
+
+    .section2-divleft-box-image {
+        width: 38px;
+    }
+
+    .section2-divright-textpart-title {
+        font-size: 1.2em;
+    }
+
+    .section2-divright-textpart-paragraph {
+        font-size: 1em;
+    }
 }
 
+@media (max-width: 1100px) {
+    .section2-divright {
+        gap: 90px 0px;
+    }
+}
 
 @media (max-width: 950px) {
+    section > #content {
+        margin-top: 20px;
+    }
+
     .main-section1-text {
-        font-size: 2em;
+        font-size: 1.8em;
         width: 95%;
         margin-left: 10px;
         margin-bottom: 10px;
@@ -267,11 +299,98 @@ section > #content {
     }
 
     .main-section1-divright-image {
-        width: 100%;
+        width: 85%;
+    }
+
+    .section2 {
+        gap: 0px 40px;
+    }
+
+    .section2-divleft-box-title {
+        font-size: 1.3em;
+    }
+
+    .section2-divleft-box-image {
+        width: 35px;
+    }
+
+    .section2-divleft-box-paragraph {
+        font-size: 0.8em;
+    }
+
+    .section2-divright {
+        gap: 100px 0px;
     }
 
     .main-section1-divright-start {
         margin-bottom: 30px;
+    }
+
+    .section2-divright-textpart-title {
+        font-size: 1em;
+    }
+
+    .section2-divright-textpart-paragraph {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 805px) {
+    .section2-divright-image {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 705px) {
+    .main-section1-text {
+        font-size: 1.6em;
+    }
+
+    .main-section1-divright-image {
+        width: 80%;
+    }
+
+    .section2 {
+        flex-direction: column;
+        padding: 63px 0px 0px 0px;
+    }
+
+    .section2-divleft-box {
+        width: 70%;
+        text-align: justify;
+    }
+
+    .section2-divleft-box-title {
+        text-align: center;
+    }
+
+    .section2-divleft-box-image {
+        width: 30px;
+    }
+
+    .section2-divright {
+        gap: 20px 20px;
+        margin-top: 70px;
+        flex-direction: row-reverse;
+    }
+
+    .section2-divright-image {
+        display: none;
+    }
+
+    .section2-divright-textpart {
+        padding: 20px;
+        width: 68%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .section2-divright-textpart-title {
+        font-size: 0.9em;
+    }
+
+    .section2-divright-textpart-paragraph {
+        font-size: 0.8em;
     }
 }
 
@@ -297,7 +416,7 @@ section > #content {
         gap: 60px 0px;
         margin-bottom: 40px;
         margin-top: 30px;
-        padding-block: 25px;
+        padding-block: 5px;
         border-radius: 10px;
         font-family: "Poppins", sans-serif;
         border: 0.4px solid #A8896A;
@@ -306,6 +425,13 @@ section > #content {
     .header-menu2-link {
         text-decoration: none;
         color: rgba(0, 0, 0, 0.856);
+        padding: 20px;
+        border-radius: 8px;
+        margin-inline: 4px;
+    }
+
+    .header-menu2-link:active {
+        background-color: #a8896a83;
     }
     
     .header-menu {
@@ -327,8 +453,21 @@ section > #content {
     .main-section1-text-emphasis {
         font-size: 1.7em;
     }
+    
     .header-menu2-link {
         font-size: 0.7em;
+    }
+
+    .section2-divleft-box {
+        width: 90%;
+    }
+
+    .section2-divright-image {
+        width: 60%;
+    }
+
+    .section2-divright-textpart {
+        width: 80%;
     }
 }
 
@@ -337,8 +476,16 @@ section > #content {
         font-size: 1.3em;
     }
 
+    .section2-divleft-box {
+        width: 98%;
+    }
+
     .main-section1-text-emphasis {
         font-size: 1.6em;
+    }
+    
+    .section2-divright-textpart {
+        width: 80%;
     }
 }
 
