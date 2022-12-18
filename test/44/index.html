@@ -9,17 +9,41 @@
 </head>
 <body>
     <header>
+        <input type="checkbox" id="header-input">
+        <label class="header-button" for="header-input"><img src="images/Group 24.svg" alt="Menu categorias"></label>
+        <nav class="header-left">
+            <div class="header-left-categories">
+                <h2 class="header-left-categories-title">Categorias</h2>
+                <div class="header-left-categories-itemscontainer">
+                    <a class="header-left-categories-itemscontainer-item" href="#">Promoções <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg"  alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">PC Gamer <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg"  alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Hardware <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Celular e Smartphone <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Periféricos <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Gabinetes <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Monitor Gamer <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Cadeira Gamer <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                </div>
+            </div>
+            <div class="header-left-categories">
+                <h2 class="header-left-categories-title">Ajuda e configurações</h2>
+                <div class="header-left-categories-itemscontainer">
+                    <a class="header-left-categories-itemscontainer-item" href="#">Minha Conta <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Atendimento ao Cliente <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Quem Somos? <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                    <a class="header-left-categories-itemscontainer-item" href="#">Sobre <img class="header-left-categories-itemscontainer-item-image" src="images/Vector 8.svg" alt="Seta"></a>
+                </div>
+            </div>
+        </nav>
         <h1 class="header-title">Store.com</h1>
         <div class="header-search">
             <input class="header-search-input" type="text">
             </input>
             <button class="header-search-button"><img class="header-search-button-image" src="images/Lupa.svg" alt="Lupa, botão de pesquisa"></button>
         </div>
-        <nav class="header-menu">
-            <a class="header-menu-item" href="#">Categorias</a>
-            <a class="header-menu-item" href="#">Lançamentos</a>
-            <a class="header-menu-item" href="#">Sobre</a>
-            <a class="header-menu-item" href="#">Contato</a>
+        <nav class="header-right">
+            <a class="header-right-item-login" href="#"><img class="header-right-item-image" src="images/profile 1 (1) 1.svg" alt="Usuário"><p class="header-right-item-paragraph">Faça o <span class="header-right-item-paragraphlogin">login</span><br>ou se <span class="header-right-item-paragraphsign">cadastre</span></p></a>
+            <a class="header-right-item" href="#"><img src="images/Group 12.svg" alt="Carrinho de compras"></a>
         </nav>
     </header>
     <main>
@@ -38,6 +62,10 @@
                     <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
                     <p class="main-section2-item-infoprice-price">&dollar; 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
                 </div>
+                <div class="main-section2-item-cartbuy">
+                    <button class="main-section2-item-cartbuy-item">Carrinho</button>
+                    <button class="main-section2-item-cartbuy-item main-section2-item-cartbuy-itemfeature">Comprar</button>
+                </div>
             </article>
             <article class="main-section2-item">
                 <div class="main-section2-item-top">
@@ -48,6 +76,10 @@
                 <div class="main-section2-item-infoprice">
                     <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
                     <p class="main-section2-item-infoprice-price">$ 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
+                </div>
+                <div class="main-section2-item-cartbuy">
+                    <button class="main-section2-item-cartbuy-item">Carrinho</button>
+                    <button class="main-section2-item-cartbuy-item main-section2-item-cartbuy-itemfeature">Comprar</button>
                 </div>
             </article>
             <article class="main-section2-item">
@@ -60,16 +92,9 @@
                     <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
                     <p class="main-section2-item-infoprice-price">$ 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
                 </div>
-            </article>
-            <article class="main-section2-item">
-                <div class="main-section2-item-top">
-                    <p class="main-section2-item-top-remaining">146 Restantes</p>
-                    <p class="main-section2-item-top-discount">99% OFF</p>
-                </div>
-                <img class="main-section2-item-image" src="images/Google-Pixel-7-6-1-scaled 1.png" alt="Produto para venda">
-                <div class="main-section2-item-infoprice">
-                    <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
-                    <p class="main-section2-item-infoprice-price">$ 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
+                <div class="main-section2-item-cartbuy">
+                    <button class="main-section2-item-cartbuy-item">Carrinho</button>
+                    <button class="main-section2-item-cartbuy-item main-section2-item-cartbuy-itemfeature">Comprar</button>
                 </div>
             </article>
             <article class="main-section2-item">
@@ -81,6 +106,25 @@
                 <div class="main-section2-item-infoprice">
                     <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
                     <p class="main-section2-item-infoprice-price">$ 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
+                </div>
+                <div class="main-section2-item-cartbuy">
+                    <button class="main-section2-item-cartbuy-item">Carrinho</button>
+                    <button class="main-section2-item-cartbuy-item main-section2-item-cartbuy-itemfeature">Comprar</button>
+                </div>
+            </article>
+            <article class="main-section2-item">
+                <div class="main-section2-item-top">
+                    <p class="main-section2-item-top-remaining">146 Restantes</p>
+                    <p class="main-section2-item-top-discount">99% OFF</p>
+                </div>
+                <img class="main-section2-item-image" src="images/Google-Pixel-7-6-1-scaled 1.png" alt="Produto para venda">
+                <div class="main-section2-item-infoprice">
+                    <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
+                    <p class="main-section2-item-infoprice-price">$ 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
+                </div>
+                <div class="main-section2-item-cartbuy">
+                    <button class="main-section2-item-cartbuy-item">Carrinho</button>
+                    <button class="main-section2-item-cartbuy-item main-section2-item-cartbuy-itemfeature">Comprar</button>
                 </div>
             </article>
             <article class="main-section2-item">
@@ -93,6 +137,10 @@
                     <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
                     <p class="main-section2-item-infoprice-price">$ 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
                 </div>
+                <div class="main-section2-item-cartbuy">
+                    <button class="main-section2-item-cartbuy-item">Carrinho</button>
+                    <button class="main-section2-item-cartbuy-item main-section2-item-cartbuy-itemfeature">Comprar</button>
+                </div>
             </article>
             <article class="main-section2-item">
                 <div class="main-section2-item-top">
@@ -104,6 +152,10 @@
                     <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
                     <p class="main-section2-item-infoprice-price">$ 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
                 </div>
+                <div class="main-section2-item-cartbuy">
+                    <button class="main-section2-item-cartbuy-item">Carrinho</button>
+                    <button class="main-section2-item-cartbuy-item main-section2-item-cartbuy-itemfeature">Comprar</button>
+                </div>
             </article>
             <article class="main-section2-item">
                 <div class="main-section2-item-top">
@@ -114,6 +166,10 @@
                 <div class="main-section2-item-infoprice">
                     <h4 class="main-section2-item-infoprice-title">Smartphone</h4>
                     <p class="main-section2-item-infoprice-price">$ 99.99 <sup class="main-section2-pricetypeshippingfree"><em>Frete Grátis</em></sup></p>
+                </div>
+                <div class="main-section2-item-cartbuy">
+                    <button class="main-section2-item-cartbuy-item">Carrinho</button>
+                    <button class="main-section2-item-cartbuy-item main-section2-item-cartbuy-itemfeature">Comprar</button>
                 </div>
             </article>
         </section>
