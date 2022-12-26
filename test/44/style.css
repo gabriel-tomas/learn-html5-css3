@@ -92,7 +92,7 @@ header {
     margin-left: 50px;
 }
 
-.header-right-item-login {
+.header-right-item-login, .header-left-header-login {
     font-size: 19px;
     font-family: "Nova Round", sans-serif;
     font-weight: 400;
@@ -255,6 +255,10 @@ header {
     z-index: 1;
 }
 
+.header-left-header {
+    display: none;
+}
+
 .header-left-categories-title {
     color: white;
     font-family: "Cabin", sans-serif;
@@ -299,11 +303,11 @@ header {
     left: 0px;
     top: 0px;
     background-color: #292838;
-    height: 100%;
+    height: 92%;
     border-top: 0.2px solid white;
     overflow-y: scroll;
     z-index: 1;
-    margin-top: 74px;
+    margin-top: 73px;
     transform: translateX(-30vw);
     animation: 0.7s to-original-position forwards ease;
 }
@@ -426,5 +430,183 @@ header:has(> #header-input:not(:checked)) + main {
 
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 1080px) {
+    .header-left {
+        display: none;
+        animation: none;
+    }
+
+    #header-input:checked ~ .header-left {
+        animation: none;
+        transform: translateX(0px);
+    }
+
+    header:has(> #header-input:checked) + main {
+        animation: .5s blur forwards .1s;
+    }
+
+    header:has(> #header-input:not(:checked)) + main {
+        animation: .5s unblur forwards .1s;
+    }
+}
+
+@media (max-width: 960px) {
+    .header-right-item-login {
+        display: none;
+    }
+
+    #header-input:checked ~ .header-left {
+        top: -18px;
+        height: 92%;
+    }
+
+    .header-left-header {
+        display: flex;
+    }
+
+    .header-left-header-login {
+        margin-left: 15px;
+    }
+
+    .header-left-header-back {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .main-section2 {
+        gap: 36px 50px;
+        margin-inline: 36px;
+    }
+}
+
+@media (max-width: 872px) {
+    .main-section2 {
+        gap: 20px 30px;
+        margin-inline: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-section2-item {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .main-section2-item-image {
+        display: inline;
+        float: right;
+    }
+
+    .main-section2-item-infoprice {
+        margin-top: 60px;
+    }
+
+    .main-section2-item-cartbuy-item {
+        padding: 10px 20px;
+    }
+
+    .header-search-input {
+        width: 20vw;
+    }
+}    
+
+@media (max-width: 650px) {
+    header {
+        height: 100px;
+        justify-content: space-between;
+        padding-inline: 20px;
+    }
+
+    .header-button, .header-title, .header-right {
+        position: relative;
+        top: -27px;
+    }
+
+    #header-input:checked ~ .header-left {
+        top: 42px;
+        height: 84%;
+        padding: 20px;
+    }
+
+    .header-title, .header-right-item{
+        margin: 0;
+    }
+
+    .header-search {
+        position: absolute;
+        display: block;
+        top: 68px;
+        left: 7px;
+        width: 96%;
+        margin: auto;
+        border-radius: 3px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.829);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-search-input {
+        width: 85%;
+    }
+
+}
+
+@media (max-width: 550px) {
+    #header-input:checked ~ .header-left {
+        top: -74px;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .header-left-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-block: 15px;
+    }
+
+    .header-left-header-back {
+        display: block;
+    }
+
+    .header-left-header-imageexit {
+        width: 30px;
+    }
+
+    header:has(> .header-left > .header-left-header > #header-left-header-input:checked) {
+        display: none;
+    }
+
+    .header-left-categories-hr {
+        border-top: 1px solid white;
+        padding-top: 20px;
+    }
+
+    .header-left-categories-itemscontainer-item {
+        padding-inline: 60px;
+    }
+
+    .main-section2 {
+        gap: 45px 0px;
+    }
+
+    .main-section2-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section2-item-image {
+        width: 70vw;
+        align-self: center;
+    }
+
+    .main-section2-item-infoprice {
+        margin-top: 20px;
     }
 }
