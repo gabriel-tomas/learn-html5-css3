@@ -102,12 +102,12 @@ header {
     margin-top: 304px;
     margin-inline: auto;
     padding: 7px;
-    border-radius: 50px;
+    border-radius: 6px;
 }
 
 .main-section1-div2:hover {
     cursor: pointer;
-    animation: 1s clickhere forwards;
+    background-color: rgba(26, 26, 26, 0.205);
 }
 
 .main-section1-div2-item {
@@ -116,9 +116,33 @@ header {
     font: 300 24px "Nunito", sans-serif;
 }
 
+.main-section1-div2-itemspan {
+    display: none;
+    text-decoration: none;
+    color: white;
+    font: 300 24px "Nunito", sans-serif;
+    pointer-events: all;
+}
+
+#seemore:checked + label > .main-section1-div2-itemspan {
+    display: flex;
+    position: relative;
+    top: 27px;
+    left: 40px;
+}
+
+.main-section1-div2-itemspan > label {
+    cursor: pointer;
+}
+
+#seemore:checked + label > .main-section1-div2-item {
+    display: none;
+}
+
 .main-section1-div2-image {
     width: 28px;
     transform: rotate(90deg);
+    pointer-events: all;
 }
 
 #seemore {
@@ -137,6 +161,45 @@ header {
     height: 5%;
     border-radius: 100%;
     padding: 0px;
+    pointer-events: none;
+}
+
+#seemore:checked + label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.main-section1-subject-list {
+    width: 60%;
+    list-style: none;
+    color: #D6D7D9;
+}
+
+.main-section1-subject-list-item-paragraph {
+    font-family: "Noto sans";
+    text-align: justify;
+}
+
+
+#seemore:checked ~ .main-section1-subject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-120vw);
+    animation: 2.3s to-original-position forwards 2s;
+    position: relative;
+    bottom: 130px;
+}
+
+.main-section1-subject {
+    display: none;
+}
+
+#seemore:not(:checked) + label {
+    animation: 2s close forwards;
 }
 
 @keyframes bgchange {
@@ -182,6 +245,11 @@ header {
 }
 
 @keyframes seemore {
+    from {
+        padding-top: 100px;
+        padding-left: 250px;
+    }
+
     to {
         background-color: rgb(26, 26, 26);
         width: 100%;
@@ -189,15 +257,23 @@ header {
         overflow-y: none;
         border-radius: 0%;
         top: -302px;
+        padding-top: 0px;
+        padding-left: 0px;
     }
 }
 
-@keyframes clickhere {
+@keyframes to-original-position {
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes close {
     from {
-        background-color: rgba(26, 26, 26, 0.021);
+        transform: translateX(-120vw);
     }
 
     to {
-        background-color: rgba(26, 26, 26, 0.267);
+        transform: translateX(0px);
     }
 }
