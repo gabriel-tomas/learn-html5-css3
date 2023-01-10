@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #331817;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0px 100px;
+}
+
+header > h1 {
+    color: #8F7572;
+}
+
+header > nav {
+    display: flex;
+    gap: 0px 20px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: #8F7572;
+    font-weight: 700;
+    border: 1px solid #8F7572;
+    border-radius: 30px;
+    padding: 4px 7px;
+}
+
+header > nav > a:hover {
+    animation: bga .5s forwards;
+}
+
+@keyframes bga {
+    to {
+        background-color: #8f75721a;
+    }
+}
