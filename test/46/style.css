@@ -171,19 +171,35 @@ header {
     justify-content: flex-start;
 }
 
-.main-section1-subject-list {
+.main-section1-subjectabout-list {
     width: 60%;
     list-style: none;
     color: #D6D7D9;
 }
 
-.main-section1-subject-list-item-paragraph {
+.main-section1-subjectabout-div-list1 {
+    list-style: none;
+    color: #D6D7D9;
+}
+
+.main-section1-subjectabout-div {
+    width: 60%;
+}
+
+.main-section1-subjectabout-div-list1 {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0px;
+}
+
+.main-section1-subjectabout-list-item-paragraph, .main-section1-subjectabout-div-list1item-paragraph {
     font-family: "Noto sans";
     text-align: justify;
 }
 
 
-#seemore:checked ~ .main-section1-subject {
+#seemore:checked ~ .main-section1-subjectabout {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,12 +210,58 @@ header {
     bottom: 130px;
 }
 
-.main-section1-subject {
+section:has(> #seemore:checked) > .main-section1-div1  {
+    animation: 2s to-left forwards;
+}
+
+header:has(+ main > .main-section1 > #seemore:checked) {
+    animation: 4s to-up forwards 2s;
+}
+
+.main-section1-subjectabout {
     display: none;
 }
 
 #seemore:not(:checked) + label {
     animation: 2s close forwards;
+}
+
+.main-section1-subjectabout-more {
+    margin-top: 20vh;
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    font: 700 16px serif;
+    font-family: "Noto sans";
+    pointer-events: all;
+}
+
+.main-section1-subjectabout-more:hover + span {
+    animation: 1s down forwards;
+}
+
+.main-section1-subjectabout-list1 {
+    width: 60%;
+}
+
+.main-section1-subjectabout-footer {
+    font-family: "Noto Sans";
+    font-size: 17px;
+    color: #D6D7D9;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin-right: 120px;
+    margin-left: 60px;
+}
+
+.main-section1-subjectabout-footer-contact2-link {
+    text-decoration: none;
+    color: #7937eb;
+}
+
+.main-section1-subjectabout-footer-contact2-link:hover {
+    text-decoration: underline;
 }
 
 @keyframes bgchange {
@@ -250,10 +312,21 @@ header {
         padding-left: 250px;
     }
 
-    to {
+    99% {
         background-color: rgb(26, 26, 26);
         width: 100%;
         height: 100%;
+        overflow-y: none;
+        border-radius: 0%;
+        top: -302px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    100% {
+        background-color: rgb(26, 26, 26);
+        width: 100%;
+        height: 210%;
         overflow-y: none;
         border-radius: 0%;
         top: -302px;
@@ -275,5 +348,24 @@ header {
 
     to {
         transform: translateX(0px);
+    }
+}
+
+@keyframes down {
+    to {
+        transform: translateY(15px);
+        opacity: 20%;
+    }
+}
+
+@keyframes to-left {
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes to-up {
+    to {
+        transform: translateY(-100vh);
     }
 }
