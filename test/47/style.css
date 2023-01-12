@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #331817;
+    background-color: #174263;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -19,10 +19,12 @@ header {
     align-items: center;
     justify-content: space-around;
     gap: 0px 100px;
+    background-color: #103552;
+    padding-block: 7px;
 }
 
 header > h1 {
-    color: #8F7572;
+    color: rgb(206, 206, 206);
 }
 
 header > nav {
@@ -32,9 +34,9 @@ header > nav {
 
 header > nav > a {
     text-decoration: none;
-    color: #8F7572;
+    color: rgb(206, 206, 206);
     font-weight: 700;
-    border: 1px solid #8F7572;
+    border: 1px solid rgb(206, 206, 206);
     border-radius: 30px;
     padding: 4px 7px;
 }
@@ -43,8 +45,50 @@ header > nav > a:hover {
     animation: bga .5s forwards;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0px;
+    margin-block: 50px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 20px;
+    background-color: #1034529f;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 15px 10px;
+    color: rgb(228, 228, 228);
+}
+
+img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.buycart {
+    margin-top: 60px;
+    gap: 7px 0px;
+}
+
+input {
+    padding: 5px;
+    background-color: #66717A;
+    border-radius: 50px;
+    border: none;
+    color: rgb(206, 206, 206);
+}
+
 @keyframes bga {
     to {
-        background-color: #8f75721a;
+        background-color: #cecece1a;
     }
 }
