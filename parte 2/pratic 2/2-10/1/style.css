@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "idroid";
+    src: url("fontes/idroid.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "font1";
+    src: url("fontes/font.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #84E1AD;
+}
+
+#header {
+    background-image: linear-gradient(to bottom, #2EE07B, #146136);
+}
+
+#header-title {
+    font-family: "font1";
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.44em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
+    padding-top: 20px;
+}
+
+#header-paragraph {
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 25px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
+}
+
+#header-menu {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 8px;
+}
+
+.header-menu-item {
+    margin-right: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+main {
+    background-color: white;
+    max-width: 840px;
+    margin: 0 auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.295);
+}
+
+div {
+    padding: 20px;
+}
+
+.main-article-div-title2 {
+    font-family: "idroid", fantasy;
+    color: #146136;
+    font-size: 1.9em;
+    margin-top: 8px;
+}
+
+.main-article-div-paragraph {
+    text-indent: 27px;
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: 420;
+}
+
+.paragraph-link {
+    color: green;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-article-div-title3 {
+    background-image: linear-gradient(to right, #b0dbc3, white);
+    color: #146136;
+    font-family: "idroid", fantasy;
+    margin-top: 18px;
+    padding-left: 10px;
+    font-size: 1.46em;
+}
+
+.paragraph-link1 {
+    color: green;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.paragraph-link1::after {
+    content: "🔗";
+}
+
+.main-article-div-image {
+    display: block;
+    margin-top: 15px;
+    margin: 15px auto 0px auto;
+}
+
+.main-article-video {
+    display: block;
+    width: 80.5vw;
+    max-width: 90.5%;
+    padding: 25px 40px;
+    background-color: #1A5C38;
+    margin: 0 auto;
+}
+
+aside {
+    background-color: #C5EBD6;
+    margin: 0px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.185);
+}
+
+#main-article-aside-header {
+    background-color: #2FA866;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main-article-aside-header-title {
+    color: white;
+    font-size: 1.04em;
+    font-weight: 600;
+}
+
+#main-article-aside-div {
+    padding: 0px 8px 28px 8px;
+}
+
+.main-article-aside-div-paragraph {
+    font-weight: 420;
+    text-indent: 20px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.main-article-aside-div-list {
+    column-count: 2;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.main-article-aside-div-list-item {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 420;
+}
+
+.main-article-aside-div-list-item::before {
+    content: "\2714    ";
+}
+
+.main-article-aside-div-list-item-span {
+    text-decoration: underline;
+}
+
+.main-article-paragraph {
+    padding: 10px 20px;
+    font-weight: 420;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #1A5C38;
+}
+
+.footer-paragraph {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 6px 0px;
+    margin-top: 18px;
+}
