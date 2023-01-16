@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+}
+
+header {
+    background-color:  rgb(32, 32, 32);
+    padding-inline: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #929292;
+}
+
+header > h1 {
+    font-family: "Righteous", cursive;
+    color: #bbbbbb;
+    font-weight: 400;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 2px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: #bbbbbb;
+    font-family: "Inter", sans-serif;
+    padding: 16px 20px;
+    transition: background-color .5s, color .5s;
+    font-weight: 500;
+}
+
+header > nav > a:hover {
+    background-color: rgb(202, 202, 202);
+    color: rgb(56, 56, 56);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    gap: 60px 0px;
+}
+
+main > div {
+    width: 80%;
+}
+
+main > div > h2 {
+    color: #b9b9b9;
+    font-size: 4em;
+    font-family: "Righteous", cursive;
+}
+
+main > div > p {
+    font-size: 2em;
+    color: #585858;
+    font-family: "Righteous"; 
+}
+
+#divgetstart {
+    display: none;
+}
+
+main > input {
+    display: none;
+}
+
+main > input:checked ~ #divgetstart {
+    display: flex;
+}
+
+main > label {
+    width: 200px;
+    padding-block: 5px;
+    background-color: #181818;
+    border-radius: 2px;
+    border: 1px solid #727272;
+    font-size: 1.2em;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    transition: .7s background-color;
+    text-align: center;
+    color: #979797;
+}
+
+main > label:hover {
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+    color: rgb(192, 192, 192);
+}
+
+#divgetstart {
+    background-color: rgb(32, 32, 32);
+    color: rgb(233, 233, 233);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0px;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+#divgetstart-loginbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 200px auto 0px auto;
+}
+
+.divgetstart-loginbox-title {
+    font-size: 2em;
+}
+
+#divgetstart-loginbox-textbox, #divgetstart-loginbox-passwordbox {
+    padding: 7px 10px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+}
+
+.divgetstart-loginbox-label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#divgetstart-loginbox-btn {
+    padding: 6px 10px;
+    margin-top: 30px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 2px;
+    transition: .7s background-color;
+}
+
+#divgetstart-loginbox-btn:hover {
+    cursor: pointer;
+    background-color: rgb(199, 199, 199);
+}
+
+#divgetstart-loginbox-frgtpassword {
+    align-self: flex-end;
+    margin-top: 5px;
+    color: white;
+}
+
+#divgetstart-loginbox-signup {
+    color: white;
+}
+
+#divgetstart-quit {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: .7s all;
+}
+
+#divgetstart-quit:hover {
+    transform: translateX(-10px);
+}
+
+
+#divgetstart-quit::before {
+    content: "<";
+    width: fit-content;
+    font-size: 2em;
+    margin-left: 30px;
+    
+}
+
+#divgetstart-quit::after {
+    content: "Return";
+    align-self: center;
+    font-size: 1.3em;
+    margin-left: 6px;
+}
+
+@media (max-width: 860px) {
+    header {
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    header > nav {
+        margin-top: 10px;
+        border-top: 1px solid #929292;
+        border-right: 1px solid #929292;
+        border-radius: 5px 5px 0px 0px;
+        border-left: 1px solid #929292;
+    }
+
+    main {
+        margin-top: 120px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 720px) {
+    main {
+        margin-top: 80px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-height: 660px) {
+    main {
+        margin-top: 70px;
+        font-size: 0.6em;
+    }
+
+    #divgetstart-loginbox {
+        margin-top: 120px;
+    }
+}

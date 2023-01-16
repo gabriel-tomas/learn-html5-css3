@@ -51,10 +51,18 @@ body {
 }
 
 .header-menu-item {
-    margin-right: 16px;
+    margin-right: 1px;
     text-decoration: none;
     color: white;
     font-weight: 600;
+    padding: 5px;
+    border-radius: 3px;
+    transition: .5s background, .5s color;
+}
+
+.header-menu-item:hover {
+    background-color: #25B664;
+    color: black;
 }
 
 main {
@@ -84,7 +92,7 @@ div {
     font-weight: 420;
 }
 
-.paragraph-link {
+.paragraph-dstq {
     color: green;
     text-decoration: none;
     font-weight: 600;
@@ -99,10 +107,33 @@ div {
     font-size: 1.46em;
 }
 
+.paragraph-link {
+    color: rgb(0, 128, 0);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0px 2px 0px 5px;
+}
+
+.paragraph-link::after {
+    content: "🔗";
+}
+
+.paragraph-link:hover {
+    text-decoration: underline;
+    color: rgb(0, 146, 0);
+}
+
 .paragraph-link1 {
     color: green;
     text-decoration: none;
     font-weight: 600;
+    background-color: #b0dbc3;
+    padding: 0px 2px 0px 5px;
+}
+
+.paragraph-link1:hover {
+    text-decoration: underline;
+    color: rgb(0, 146, 0);
 }
 
 .paragraph-link1::after {
@@ -152,6 +183,7 @@ aside {
 .main-article-aside-div-paragraph {
     font-weight: 420;
     text-indent: 20px;
+    text-decoration: none;
     text-align: justify;
     margin-top: 15px;
 }
@@ -164,7 +196,6 @@ aside {
 
 .main-article-aside-div-list-item {
     display: block;
-    text-decoration: none;
     color: black;
     font-weight: 420;
 }
@@ -174,7 +205,7 @@ aside {
 }
 
 .main-article-aside-div-list-item-span {
-    text-decoration: underline;
+    text-decoration: dotted;
 }
 
 .main-article-paragraph {
@@ -195,6 +226,16 @@ footer {
     font-size: 0.9em;
     padding: 6px 0px;
     margin-top: 18px;
+}
+
+.footer-paragraph-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-paragraph-link:hover {
+    text-decoration: underline;
+    color: #76cf9e;
 }
 
 #mainpage {
@@ -266,3 +307,9 @@ footer {
     width: 150px;
 }
 
+@keyframes color-change {
+    to {
+        background-color: #25B664;
+        color: black;
+    }
+}
