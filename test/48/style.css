@@ -12,22 +12,23 @@
 }
 
 body {
-    background-color: rgb(19, 19, 19);
+    background-color: #1D7378;
 }
 
 header {
-    background-color:  rgb(32, 32, 32);
+    background-color:  #144063;
     padding-inline: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #929292;
+    border-bottom: 1px solid #104152;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.192);
 }
 
 header > h1 {
     font-family: "Righteous", cursive;
-    color: #bbbbbb;
+    color: #cfd8e0;
     font-weight: 400;
 }
 
@@ -39,7 +40,7 @@ header > nav {
 
 header > nav > a {
     text-decoration: none;
-    color: #bbbbbb;
+    color: #cfd8e0;
     font-family: "Inter", sans-serif;
     padding: 16px 20px;
     transition: background-color .5s, color .5s;
@@ -55,8 +56,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 180px;
     gap: 60px 0px;
+    box-shadow: inset 0px 0px 160px rgba(0, 0, 0, 0.295);
+    height: 93.2vh;
 }
 
 main > div {
@@ -64,15 +66,18 @@ main > div {
 }
 
 main > div > h2 {
-    color: #b9b9b9;
+    color: #dbdbdb;
     font-size: 4em;
-    font-family: "Righteous", cursive;
+    font-family: "Inter", cursive;
+    text-shadow: -7px 4px 6px rgba(0, 0, 0, 0.116);
+    margin-top: 180px;
 }
 
 main > div > p {
     font-size: 2em;
-    color: #585858;
-    font-family: "Righteous"; 
+    color: #dbdbdb;
+    font-family: "Inter"; 
+    text-shadow: -5px 4px 6px rgba(0, 0, 0, 0.075);
 }
 
 #divgetstart {
@@ -85,31 +90,42 @@ main > input {
 
 main > input:checked ~ #divgetstart {
     display: flex;
+    transform: translate(-100vw);
+    animation: 2s to-original-position forwards;
+}
+
+body:has(main > input:checked) {
+    overflow-y: hidden;
+}
+
+main > input:not(:checked) ~ #divgetstart {
+    display: none;
 }
 
 main > label {
     width: 200px;
-    padding-block: 5px;
-    background-color: #181818;
+    padding-block: 8px;
+    background-color: #208085;
     border-radius: 2px;
-    border: 1px solid #727272;
+    border: 1px solid #1b6e72;
     font-size: 1.2em;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     transition: .7s background-color;
     text-align: center;
-    color: #979797;
+    color: rgb(238, 238, 238);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.11);
 }
 
 main > label:hover {
     cursor: pointer;
-    background-color: rgb(36, 36, 36);
-    color: rgb(192, 192, 192);
+    background-color: #279aa0;
+    color: white;
 }
 
 #divgetstart {
-    background-color: rgb(32, 32, 32);
-    color: rgb(233, 233, 233);
+    background-color: #DBDBDB;
+    color: rgb(41, 41, 41);
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -146,7 +162,7 @@ main > label:hover {
 #divgetstart-loginbox-btn {
     padding: 6px 10px;
     margin-top: 30px;
-    background-color: white;
+    background-color: rgb(199, 199, 199);
     font-family: "Poppins", sans-serif;
     border: none;
     border-radius: 2px;
@@ -155,17 +171,18 @@ main > label:hover {
 
 #divgetstart-loginbox-btn:hover {
     cursor: pointer;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(41, 41, 41);
+    color: white;
 }
 
 #divgetstart-loginbox-frgtpassword {
     align-self: flex-end;
     margin-top: 5px;
-    color: white;
+    color: rgb(41, 41, 41);
 }
 
 #divgetstart-loginbox-signup {
-    color: white;
+    color: rgb(41, 41, 41);
 }
 
 #divgetstart-quit {
@@ -195,6 +212,10 @@ main > label:hover {
     margin-left: 6px;
 }
 
+.divgetstart-loginbox-paragraph {
+    margin-top: 1px;
+}
+
 @media (max-width: 860px) {
     header {
         flex-direction: column;
@@ -210,25 +231,54 @@ main > label:hover {
     }
 
     main {
-        margin-top: 120px;
         font-size: 0.9em;
+    }
+
+    main > div > h2 {
+        margin-top: 120px;
     }
 }
 
 @media (max-width: 720px) {
     main {
-        margin-top: 80px;
         font-size: 0.8em;
+    }
+
+    main > div > h2 {
+        margin-top: 80px;
     }
 }
 
 @media (max-height: 660px) {
     main {
-        margin-top: 70px;
         font-size: 0.6em;
+    }
+
+    main > div > h2 {
+        margin-top: 70px;
     }
 
     #divgetstart-loginbox {
         margin-top: 120px;
+    }
+}
+
+@keyframes to-original-position {
+    to {
+        transform: translate(0px);
+    }
+}
+
+@keyframes animation-login {
+    10% {
+        transform: translateX(0px);
+    }
+    
+    80% {
+        transform: translate(100vw);
+    }
+    
+    100% {
+        display: none;
     }
 }
