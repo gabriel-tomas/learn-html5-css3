@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --body-color: #E7E7E7;
+    --bg-section-color: #FDFDFD;
+    --row-section-color: #d3d3d3;
+    --other-topics-div-color: #F4F4F4;
+    --other-topics-div-color-hover: #e2e2e2;
+    --main-color: #171A42;
+    --main-color-hover: #222663;
+    --color1: #171a425b;
+    --color2: #32388F;
+    --color2-hover: #4049c2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 60px;
+    padding: 14px 60px 14px 130px;
+    background-color: white;
+}
+
+.header-title {
+    font-family: "Newsreader", serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: var(--main-color);
+}
+
+.header-searchbox {
+    padding: 12px 12px 12px 45px;
+    border-radius: 3px;
+    border: none;
+    visibility: hidden;
+    display: block;
+    width: 0%;
+    transition: .7s width, .7s visibility;
+    font-family: "Source Sans 3";
+    font-size: 15px;
+}
+
+.header-searchbox:enabled {
+    outline: none;
+    border: none;
+}
+
+.header-image:hover {
+    position: absolute;
+    top: 26px;
+    right: 458px;
+    transform: rotate(-795deg);
+    transition: .65s right, .8s transform;
+    cursor: pointer;
+}
+
+.header-image:hover ~ .header-searchbox {
+    display: block;
+    width: 30%;
+    transition: .7s width;
+    background-color: rgb(247, 247, 247);
+    visibility: visible;
+}
+
+.header-searchbox:hover {
+    display: block;
+    width: 30%;
+    transition: .7s width;
+    background-color: rgb(247, 247, 247);
+    visibility: visible;
+}
+
+header:has(> .header-searchbox:hover) > .header-image {
+    position: absolute;
+    top: 26px;
+    right: 458px;
+    transform: rotate(-797deg);
+    transition: .65s right, .8s transform;
+}
+
+.header-image {
+    width: 17px;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    transition: .9s right, .8s transform;
+}
+
+nav {
+    background-color: white;
+    border-block: 1px solid var(--color1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 1px;
+}
+
+.menu-item {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--main-color);
+    transition: .2s background-color;
+}
+
+.menu-item:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--bg-section-color);
+    border-radius: 3px;
+}
+
+.Topstories {
+    margin-top: 20px;
+}
+
+.Topstories-title, .othertopics-title {
+    font-family: "Source Serif Pro";
+    color: black;
+    font-size: 1.6em;
+    border-bottom: 1px solid var(--row-section-color);
+    padding: 8px 0px 3px 20px;
+    font-weight: 700;
+}
+
+.Topstories-article {
+    display: flex;
+    flex-direction: row;
+    padding: 27px 25px;
+}
+
+.Topstories-article-mainnews-title {
+    font-family: "Source Serif Pro", serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.Topstories-article-mainnews-div {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 16px;
+    align-items: center;
+    border-right: 1px solid var(--row-section-color);
+}
+
+.Topstories-article-mainnews-div-image {
+    width: 550px;
+}
+
+.Topstories-article-mainnews-div-paragraph {
+    font-family: "Source Sans 3", sans-serif;
+    width: 28%;
+}
+
+.Topstories-article-aside {
+    width: 120%;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px 0px;
+}
+
+.Topstories-article-aside-item {
+    border-bottom: 1px solid var(--row-section-color);
+    padding-bottom: 11px;
+}
+
+.noborderbottom {
+    border: none;
+}
+
+.Topstories-article-aside-item-link {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: var(--color2);
+    transition: .2s color;
+}
+
+.Topstories-article-aside-item-link:hover {
+    color: var(--color2-hover);
+}
+
+.Topstories-article-aside-item-link-title {
+    font-size: 13.5px;
+    font-family: "Source Serif Pro", serif;
+}
+
+.Topstories-article-aside-item-link-image {
+    width: 80px;
+}
+
+.othertopics-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 15px;
+    margin-top: 18px;
+    padding-bottom: 35px;
+    transition: .4s gap;
+}
+
+.othertopics-div-link {
+    width: 22%;
+    background-color: var(--other-topics-div-color);
+    padding: 7px 7px 20px 7px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    transition: .4s padding, .2s background-color;
+}
+
+.othertopics-div-link:hover {
+    background-color: var(--other-topics-div-color-hover);
+}
+
+.othertopics-div-link-article-image {
+    width: 250px;
+    border-radius: 2px;
+    transition: .5s transform;
+}
+
+.othertopics-div-link-article-image:hover {
+    transform: scale(120%);
+    transition-delay: 1.5s;
+}
+
+.othertopics-div-link-article-title {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: "Source Serif Pro", serif;
+}
+
+.footer-paragraph {
+    text-align: center;
+    margin-top: 80px;
+    background-color: white;
+    padding: 8px;
+    font-family: "Source Sans 3";
+    border-top: 1px solid var(--color1);
+}
+
+.footer-paragraph-link {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
+    padding-inline: 3px;
+}
+
+.footer-paragraph-link:hover {
+    background-color: var(--main-color-hover);
+    color: white;
+}
+
