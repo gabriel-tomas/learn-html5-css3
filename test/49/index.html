@@ -10,12 +10,44 @@
 </head>
 <body>
     <header>
-        <h1 class="header-title">NewsNotice</h1>
-        <img class="header-image" src="images/Group 16.svg" alt="Search news">
-        <input class="header-searchbox" type="text" placeholder="Searh notices in NN">
+        <div class="header-rightdiv">
+            <input type="checkbox" id="menu0-input">
+            <label class="header-buttonlabel" for="menu0-input">
+                <img class="header-buttonlabel-image" src="images/Group51.png" alt="Menu button">
+            </label>
+            <div class="header-rightdiv-menu0">
+                <div class="header-rightdiv-menu0-top">
+                    <div class="header-right-div-menu0-top-left">
+                        <label class="header-right-div-menu0-top-left-label" for="menu0-input"></label>
+                        <h1 class="header-right-div-menu0-top-left-title">NewsNotice</h1>
+                    </div>
+                    <div class="header-rightdiv-menu0-top-right">
+                        <img class="header-rightdiv-menu0-top-right-image" src="images/Vector.png" alt="Sign account">
+                        <a class="header-rightdiv-menu0-top-right-link" href="#">Sign in</a>
+                    </div>
+                </div>
+                <div class="header-rightdiv-menu0-div">
+                    <h2 class="header-rightdiv-menu0-div-title">Category</h2>
+                    <button class="header-rightdiv-menu0-div-item">Lorem</button>
+                    <button class="header-rightdiv-menu0-div-item">ipsum</button>
+                    <button class="header-rightdiv-menu0-div-item">consectetur</button>
+                    <button class="header-rightdiv-menu0-div-item">assumenda</button>
+                    <button class="header-rightdiv-menu0-div-item">accusantium</button>
+                    <button class="header-rightdiv-menu0-div-item">adipisicing</button>
+                    <button class="header-rightdiv-menu0-div-item">mollitia</button>
+                    <button class="header-rightdiv-menu0-div-item">obcaecati</button>
+                </div>
+            </div>
+            <h1 class="header-title">NewsNotice</h1>
+        </div>
+        <input type="checkbox" id="header-checkbox">
+        <label class="header-searchbox-label" for="header-checkbox">
+            <img class="header-image" src="images/Group16.svg" alt="Search news">
+            <input class="header-searchbox" type="text" placeholder="Searh notices in NN">
+        </label>
     </header>
     <nav>
-        <a class="menu-item" href="#">Home</a>
+        <a class="menu-item" href="index.html">Home</a>
         <a class="menu-item" href="#">For you</a>
         <a class="menu-item" href="#">Economy</a>
         <a class="menu-item" href="#">International</a>
@@ -27,7 +59,10 @@
                 <div class="Topstories-article-mainnews">
                     <h2 class="Topstories-article-mainnews-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                     <div class="Topstories-article-mainnews-div">
-                        <img class="Topstories-article-mainnews-div-image" src="images/Group 10.jpg" alt="News">
+                        <picture>
+                            <source media="(max-width: 890px)" srcset="images/Group10-small.jpg">
+                            <img class="Topstories-article-mainnews-div-image" src="images/Group10.jpg" alt="News">
+                        </picture>
                         <p class="Topstories-article-mainnews-div-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
                     </div>
                 </div>
@@ -35,31 +70,31 @@
                     <article class="Topstories-article-aside-item">
                         <a class="Topstories-article-aside-item-link" href="#">
                             <h3 class="Topstories-article-aside-item-link-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.</h3>
-                            <img class="Topstories-article-aside-item-link-image" src="images/Group 35.jpg" alt="News aside">
+                            <img class="Topstories-article-aside-item-link-image" src="images/Group35.jpg" alt="News aside">
                         </a>
                     </article>
                     <article class="Topstories-article-aside-item">
                         <a class="Topstories-article-aside-item-link" href="#">
                             <h3 class="Topstories-article-aside-item-link-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.</h3>
-                            <img class="Topstories-article-aside-item-link-image" src="images/Group 36.jpg" alt="News aside">
+                            <img class="Topstories-article-aside-item-link-image" src="images/Group36.jpg" alt="News aside">
                         </a>
                     </article>
                     <article class="Topstories-article-aside-item">
                         <a class="Topstories-article-aside-item-link" href="#">
                             <h3 class="Topstories-article-aside-item-link-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.</h3>
-                            <img class="Topstories-article-aside-item-link-image" src="images/Group 37.jpg" alt="News aside">
+                            <img class="Topstories-article-aside-item-link-image" src="images/Group37.jpg" alt="News aside">
                         </a>
                     </article>
                     <article class="Topstories-article-aside-item">
                         <a class="Topstories-article-aside-item-link" href="#">
                             <h3 class="Topstories-article-aside-item-link-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.</h3>
-                            <img class="Topstories-article-aside-item-link-image" src="images/Group 38.jpg" alt="News aside">
+                            <img class="Topstories-article-aside-item-link-image" src="images/Group38.jpg" alt="News aside">
                         </a>
                     </article>
                     <article class="Topstories-article-aside-item noborderbottom">
                         <a class="Topstories-article-aside-item-link" href="#">
                             <h3 class="Topstories-article-aside-item-link-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.</h3>
-                            <img class="Topstories-article-aside-item-link-image" src="images/Group 39.jpg" alt="News aside">
+                            <img class="Topstories-article-aside-item-link-image" src="images/Group39.jpg" alt="News aside">
                         </a>
                     </article>
                 </aside>
@@ -70,49 +105,49 @@
             <div class="othertopics-div">
                 <a class="othertopics-div-link" href="#">
                     <article class="othertopics-div-link-article">
-                        <img class="othertopics-div-link-article-image" src="images/Group 18.jpg" alt="News">
+                        <img class="othertopics-div-link-article-image" src="images/Group18.jpg" alt="News">
                         <h2 class="othertopics-div-link-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h2>
                     </article>
                 </a>
                 <a class="othertopics-div-link" href="#">
                     <article class="othertopics-div-link-article">
-                        <img class="othertopics-div-link-article-image" src="images/Group 20.jpg" alt="News">
+                        <img class="othertopics-div-link-article-image" src="images/Group20.jpg" alt="News">
                         <h2 class="othertopics-div-link-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h2>
                     </article>
                 </a>
                 <a class="othertopics-div-link" href="#">
                     <article class="othertopics-div-link-article">
-                        <img class="othertopics-div-link-article-image" src="images/Group 22.jpg" alt="News">
+                        <img class="othertopics-div-link-article-image" src="images/Group22.jpg" alt="News">
                         <h2 class="othertopics-div-link-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h2>
                     </article>
                 </a>
                 <a class="othertopics-div-link" href="#">
                     <article class="othertopics-div-link-article">
-                        <img class="othertopics-div-link-article-image" src="images/Group 24.jpg" alt="News">
+                        <img class="othertopics-div-link-article-image" src="images/Group24.jpg" alt="News">
                         <h2 class="othertopics-div-link-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h2>
                     </article>
                 </a>
                 <a class="othertopics-div-link" href="#">
                     <article class="othertopics-div-link-article">
-                        <img class="othertopics-div-link-article-image" src="images/Group 26.jpg" alt="News">
+                        <img class="othertopics-div-link-article-image" src="images/Group26.jpg" alt="News">
                         <h2 class="othertopics-div-link-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h2>
                     </article>
                 </a>
                 <a class="othertopics-div-link" href="#">
                     <article class="othertopics-div-link-article">
-                        <img class="othertopics-div-link-article-image" src="images/Group 24.jpg" alt="News">
+                        <img class="othertopics-div-link-article-image" src="images/Group24.jpg" alt="News">
                         <h2 class="othertopics-div-link-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h2>
                     </article>
                 </a>
                 <a class="othertopics-div-link" href="#">
                     <article class="othertopics-div-link-article">
-                        <img class="othertopics-div-link-article-image" src="images/Group 30.jpg" alt="News">
+                        <img class="othertopics-div-link-article-image" src="images/Group30.jpg" alt="News">
                         <h2 class="othertopics-div-link-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h2>
                     </article>
                 </a>
                 <a class="othertopics-div-link" href="#">
                     <article class="othertopics-div-link-article">
-                        <img class="othertopics-div-link-article-image" src="images/Group 32.jpg" alt="News">
+                        <img class="othertopics-div-link-article-image" src="images/Group32.jpg" alt="News">
                         <h2 class="othertopics-div-link-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h2>
                     </article>
                 </a>
