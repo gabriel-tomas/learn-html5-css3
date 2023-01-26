@@ -108,17 +108,17 @@ div {
     text-indent: 27px;
     margin-top: 15px;
     text-align: justify;
-    font-weight: 420;
+    line-height: 2em;
 }
 
-.paragraph-dstq {
+.paragraph-strong {
     color: var(--cor4);
     text-decoration: none;
     font-weight: 600;
 }
 
 .main-article-div-title2 {
-    background-image: linear-gradient(to right, #b0dbc3, white);
+    background-image: linear-gradient(to right, #b0dbc3, transparent);
     color: var(--cor4);
     font-family: var(--fonte-titulos);
     margin-top: 18px;
@@ -167,7 +167,7 @@ div {
 }
 
 .main-article-div-imagepequena {
-    width: 50%;
+    max-width: 350px;
 }
 
 .main-article-backvideo {
@@ -206,7 +206,6 @@ aside {
 }
 
 .main-article-aside-div-paragraph {
-    font-weight: 420;
     text-indent: 20px;
     text-decoration: none;
     text-align: justify;
@@ -222,7 +221,6 @@ aside {
 .main-article-aside-div-list-item {
     display: block;
     color: black;
-    font-weight: 420;
 }
 
 .main-article-aside-div-list-item::before {
@@ -231,7 +229,6 @@ aside {
 
 .main-article-paragraph {
     padding: 10px 20px;
-    font-weight: 420;
     text-indent: 20px;
     text-align: justify;
 }
