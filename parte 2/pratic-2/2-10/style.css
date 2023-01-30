@@ -71,7 +71,7 @@ body {
 .header-menu-item {
     margin-right: 1px;
     text-decoration: none;
-    color: white;
+    color: var(--cor0);
     font-weight: 600;
     padding: 5px;
     border-radius: 3px;
@@ -170,13 +170,17 @@ main {
 .main-article-backvideo {
     background-color: var(--cor5);
     margin: 0px -20px;
-    padding: 25px 25px;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 56.6%;
 }
 
 .main-article-backvideo-video {
-    display: block;
-    margin: 0 auto;
-    width: 92%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside {
