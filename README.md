@@ -1,5 +1,14 @@
 # learn-html5-css3
 
+## Veja alguns sites desse repositório
+- [test/44](https://gabriel-tomas.github.io/learn-html5-css3/test/44/)
+- [test/42](https://gabriel-tomas.github.io/learn-html5-css3/test/42/)
+- [test/41](https://gabriel-tomas.github.io/learn-html5-css3/test/41/)
+- [test/36](https://gabriel-tomas.github.io/learn-html5-css3/test/36/)
+- [parte2/pratic-2/2-10/, Site Android](https://gabriel-tomas.github.io/learn-html5-css3/parte2/pratic-2/2-10/)
+
+
+
 ## Sobre o que é esse repositório?
 Esse repositório tem todos os arquivos usados por mim para aprender HTML e CSS.
 Usei o curso de HTML5 e CSS3 de [Gustavo Guanabara](https://github.com/gustavoguanabara) que está no site [Curso em Vídeo](https://www.cursoemvideo.com/)
