@@ -1,0 +1,26 @@
+body {
+    overflow-y: hidden;
+}
+
+.div1 {
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: 4s div infinite alternate;
+}
+
+.div2 {
+    display: inline-block;
+    animation-duration: 2s;
+}
+
+@keyframes div {
+    from {
+        margin-top: 0px;
+    }
+
+    to {
+        margin-top: 90vh;
+    }
+}
