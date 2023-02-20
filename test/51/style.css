@@ -7,6 +7,7 @@
 
 body {
     background-image: url("bg-image.jpg");
+    background-size: cover;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.205);
 }
 
-h1 {
+header > h1 {
     font-family: sans-serif;
     font-weight: 600;
     color: rgba(14, 14, 14, 0.753);
@@ -39,11 +40,25 @@ a {
     font-weight: 300;
     font-size: 20px;
     padding: 15px 20px;
-    transition: 1.3s background-color, .1.3s color;
+    transition: .18s background-color, .18s color;
 }
 
 a:hover {
     background-color: rgb(46, 46, 46);
     color: rgb(192, 192, 192);
-    transition: .5s background-color, .3s color;
+    transition: .3s background-color, .2s color;
+}
+
+main {
+    height: 93.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > h1 {
+    font-family: sans-serif;
+    color: rgb(236, 236, 236);
+    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.616);
+    font-size: 6.5em;
 }
