@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: auto 60vw auto auto auto;
+            grid-template-rows: auto 400px;
+            justify-content: center;
+            align-content: center;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-areas: "header header header header header" "main main main main aside" "main main main main aside";
+        }
+
+        div {
+            display: grid;
+            border: 3px solid rgb(43, 43, 43);
+        }
+
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: main;
+        }
+
+        .item3 {
+            grid-area: aside;
+        }
+      
+    </style>
+</head>
+<body>
+    <main>
+        <div class="item1">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla ipsa, obcaecati, et sint vero accusamus dolores reiciendis sunt fugiat laudantium impedit quo consectetur voluptates quod eum! Ad, debitis illum! lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore esse, atque excepturi quod corporis in, eligendi reiciendis, aut praesentium cum amet quae. Voluptas, quisquam! Expedita facilis laborum impedit eius unde.</p>
+        </div>
+        <div class="item2">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla ipsa, obcaecati, et sint vero accusamus dolores reiciendis sunt fugiat laudantium impedit quo consectetur voluptates quod eum! Ad, debitis illum! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est, magni mollitia officiis accusamus exercitationem, consequatur numquam modi odio aperiam voluptates optio vero harum dolorem iure. Error maiores ratione doloremque.</p>
+        </div>
+        <div class="item3">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla ipsa, obcaecati, et sint vero accusamus dolores reiciendis sunt fugiat laudantium impedit quo consectetur voluptates quod eum! Ad, debitis illum! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos obcaecati, exercitationem, accusantium accusamus nemo facilis deleniti sed nobis at iste, qui ab corrupti inventore reiciendis esse aut? Ab, impedit esse.</p>
+        </div>
+        <div>
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla ipsa, obcaecati, et sint vero accusamus dolores reiciendis sunt fugiat laudantium impedit quo consectetur voluptates quod eum! Ad, debitis illum! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet culpa id, sequi dicta sit dolore voluptatum maxime molestiae praesentium laborum minus in doloremque ratione maiores aliquid ipsum minima! Repellat, adipisci!</p>
+        </div>
+        <div class="item5">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla ipsa, obcaecati, et sint vero accusamus dolores reiciendis sunt fugiat laudantium impedit quo consectetur voluptates quod eum! Ad, debitis illum! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet culpa id, sequi dicta sit dolore voluptatum maxime molestiae praesentium laborum minus in doloremque ratione maiores aliquid ipsum minima! Repellat, adipisci!</p>
+        </div>
+    </main>
+</body>
+</html>
