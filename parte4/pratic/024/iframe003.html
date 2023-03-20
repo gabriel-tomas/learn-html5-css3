@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            font-size: 1.3rem;
+            font-family: sans-serif;
+        }
+
+        iframe {
+            border: 3px solid black;
+            width: 98vw;
+            height: 400px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-left: -40px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        ul > li > a {
+            color: white;
+            text-decoration: none;
+            background-color: grey;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>Mude a página do iframe clicando em qualquer link.</p>
+    <ul>
+        <li><a href="extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <iframe name="frame" src=""></iframe>
+</body>
+</html>
