@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+    <style>
+        html{
+            font-size: clamp(.95rem, 3vw, 1.5rem);
+        }
+
+        div {
+            width: clamp(350px, 50%, 800px);
+            margin: 0 auto;
+        }
+
+        iframe {
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Outros conteúdo dentro do iframe</h1>
+        <h2>Vídeos</h2>
+        <iframe src="https://player.vimeo.com/video/271214977?h=77acf7f307" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/271214977">Penrose</a> from <a href="https://vimeo.com/0atly">Kris Stanton</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <h2>Mapas do Google</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53212.244570603165!2d133.38370491736327!3d-24.02146269887883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b31c50dc610496f%3A0xcdf78643b43c7464!2sOwen%20Springs%20Reserve!5e0!3m2!1sen!2sbr!4v1679684878514!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Mapas do Waze</h2>
+        <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-24.004797&lon=133.368112&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
