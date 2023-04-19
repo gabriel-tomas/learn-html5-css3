@@ -1,3 +1,34 @@
 @charset "UTF-8";
 
 /* Configurações gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --font0: "Righteous", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100svh;
+    font-family: var(--font0);
+    background-color: #233EFF;
+    transition: background-color .6s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+h1 {
+    text-shadow: 2px 2px 0px rgb(173, 173, 0);
+    color: white;
+    text-align: center;
+    transition: all .4s;
+    padding-top: 10vh;
+    font-weight: normal;
+}
