@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Mobile First */
+
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Comme", sans-serif;
+    font-size: 14px;
+    height: 100vh;
+}
+
+body {
+    background-color: #404040;
+    background-image: url("../imagens/back-phone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.712);
+    width: clamp(300px, 50vw, 500px);
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #363636;
+}
+
+.dispositivo {
+    display: none;
+}
+
+#phone {
+    display: block;
+    margin-inline: auto;
+    margin-top: 25px;
+}
