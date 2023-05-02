@@ -1,1 +1,105 @@
 /* Mídias */
+
+/* Typical Device Breakpoints 
+Celular: até 600px
+Tablet portrait and large phones: mais de 600px
+Tablet landscape: mais de 768px
+Desktop e notebook: mais de 992px
+TV, large notebooks and desktops: mais de 1200px
+*/
+
+@media print {
+    html {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 13px;
+    }
+
+    main {
+        border: 5px solid grey;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+
+    h1::after {
+        content: "Você provavelmente está usando tablet em portrait ou mobile em landscape";
+    }
+
+    #phone, #tablet {
+        display: inline-block;
+        margin-inline: 0;
+        width: 49%;
+    }
+
+    #phone {
+        transform: rotate(-90deg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+
+    h1::after {
+        content: "Você provavelmente está usando orientação landscape no tablet ou só está dimensionando a janela do navegador";
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+        margin-inline: auto;
+        width: fit-content;
+        transform: rotate(-90deg);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+    }
+
+    h1::after {
+        content: "Você está em um notebook ou desktop";
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url("../imagens/back-tv.jpg");
+    }
+
+    h1::after {
+        content: "Você está em um notebook ou desktop ou tv de alta resolução";
+    }
+
+    #pc, #tv {
+        display: inline-block;
+        margin-inline: 0;
+        width: 49%;
+    }
+}
+
+

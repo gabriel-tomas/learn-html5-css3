@@ -27,7 +27,7 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.712);
-    width: clamp(300px, 50vw, 500px);
+    width: clamp(270px, 50vw, 500px);
     margin: 0 auto;
     border-radius: 20px;
     padding: 30px;
@@ -39,12 +39,19 @@ h1 {
     color: #363636;
 }
 
+h1::after {
+    content: "Você provavelmente está usando mobile em portrait";
+    font-size: 1rem;
+    display: block;
+    margin-top: 10px;
+}
+
 .dispositivo {
     display: none;
+    margin-inline: auto;
+    margin-top: 25px;
 }
 
 #phone {
     display: block;
-    margin-inline: auto;
-    margin-top: 25px;
 }
