@@ -17,7 +17,8 @@ body {
 }
 
 header {
-    background-color: #54648F;
+    background-color: #5B868F;
+    color: rgb(235, 235, 235);
 }
 
 header > h1, header > p {
@@ -38,28 +39,49 @@ header > p {
     margin: 0 auto;
 }
 
+.burguer {
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #5B868F;
+    color: white;
+    padding-block: 6px;
+    border-block: 1px solid rgba(0, 0, 0, 0.342);
+    transition: .1s background-color;
+}
+
+.burguer:hover {
+    transition: .2s background-color;
+    background-color: #483C61b6;
+    cursor: pointer;
+}
+
 menu {
-    margin-block: 10px;
     font-size: 1.1rem;
+    display: none;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.205);
 }
 
 menu > ul > li {
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #8C887D;
+    background-color: rgb(219, 219, 219);
     border-top: 2px solid rgba(0, 0, 0, 0.342);
 }
 
 menu > ul > li:hover {
-    background-color: #8c887dbd;
+    background-color: rgb(204, 204, 204);
 }
 
 menu > ul > li > a {
     display: block;
     text-decoration: none;
     padding: 2px;
-    color: rgb(236, 236, 236);
+    color: black;
     font-weight: 500;
     text-transform: lowercase;
 }
