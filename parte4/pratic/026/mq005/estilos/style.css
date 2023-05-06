@@ -39,7 +39,7 @@ header > p {
     margin: 0 auto;
 }
 
-.burguer {
+#burguer {
     font-size: 35px;
     display: block;
     text-align: center;
@@ -51,7 +51,7 @@ header > p {
     transition: .1s background-color;
 }
 
-.burguer:hover {
+#burguer:hover {
     transition: .2s background-color;
     background-color: #483C61b6;
     cursor: pointer;

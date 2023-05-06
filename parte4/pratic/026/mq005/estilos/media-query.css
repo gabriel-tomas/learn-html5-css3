@@ -1,0 +1,35 @@
+/* Typical Device Breakpoints 
+Celular: até 600px
+Tablet portrait and large phones: mais de 600px
+Tablet landscape: mais de 768px
+Desktop e notebook: mais de 992px
+TV, large notebooks and desktops: mais de 1200px
+*/
+
+@media screen and (min-width: 600px) {
+    header {
+        padding: 4px;
+    }
+
+    #burguer {
+        display: none;
+    }
+
+    #itens {
+        display: block /*!important*/;
+    }
+
+    menu {
+        position: relative;
+        margin-top: 10px;
+        box-shadow: none;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    menu > ul > li > a {
+        display: inline;
+    }
+}

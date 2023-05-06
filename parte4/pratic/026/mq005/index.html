@@ -7,12 +7,13 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudou_tamanho()">
     <header>
         <h1>Site</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cumque rem inventore accusamus</p>
-        <span class="material-symbols-rounded burguer" onclick="click_menu()">menu</span>
+        <span id="burguer" class="material-symbols-rounded" onclick="click_menu()">menu</span>
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -39,6 +40,14 @@
                 return;
             }
             itens.style.display = "block";
+        }
+
+        function mudou_tamanho() {
+            if (window.innerWidth >= 600) {
+                itens.style.display = "block";
+                return
+            }
+            itens.style.display = "none";
         }
     </script>
 </body>
