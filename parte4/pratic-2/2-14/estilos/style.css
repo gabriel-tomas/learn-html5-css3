@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color0: #0D3886;
+    --color1: #1869F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    position: relative;
+    background-color: var(--color0);
+}
+
+#login {
+    width: clamp(200px, 80vw, 830px);
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.384);
+}
+
+#imagem {
+    background: white url("../imagens/4799410.jpg") no-repeat center;
+    background-size: cover;
+    height: 200px;
+}
+
+h1 {
+    text-align: center;
+    margin-block: 3vh;
+}
+
+p {
+    line-height: 1.4rem;
+    margin-bottom: 1.3vh;
+}
+
+form {
+    width: clamp(200px, 100%, 360px);
+    margin-inline: auto;
+}
+
+.form-items {
+    width: 100%;
+    height: 50px;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 12px;
+    font-size: 2.5rem;
+}
+
+.campos {
+    width: 80%;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.campos:focus {
+    background-color: #b2ccfd38;
+    outline: 1px solid white;
+    border: 2px solid #0a2b63;
+    border-radius: 2px;
+}
+
+.button {
+    display: block;
+    width: 82%;
+    margin-left: 9%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--color1);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 2.2vh;
+}
+
+.link {
+    color: black;
+}
+
+.button-esqueci {
+    text-align: center;
+    border: 1px solid var(--color1);
+    margin-block: 1.3vh;
+    height: fit-content;
+    padding-block: 16px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.esqueci-symbol {
+    top: 5px;
+    margin-left: 5px;
+    font-size: 1.3rem;
+}

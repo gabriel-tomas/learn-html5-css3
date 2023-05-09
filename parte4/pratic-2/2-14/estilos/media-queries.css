@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media screen and (min-width: 768px) {
+    #login {
+        padding-inline: 4%;
+        padding-bottom: 3%;
+        padding-top: 2%;
+    }
+    
+    #login > div {
+        width: 46%;
+        display: inline-block;
+    }
+
+    #imagem {
+        height: 270px;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #login {
+        float: left;
+    }
+
+    #imagem {
+        height: 320px;
+        float: right;
+        margin-top: 5vh;
+    }
+}
