@@ -10,11 +10,20 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
+@media screen and (max-height: 585px) and (max-width: 600px) {
+    #login {
+        position: static;
+        transform: translate(0%, 0%);
+        margin-inline: auto;
+        border-radius: 0;
+    }
+}
+
 @media screen and (min-width: 768px) {
     #login {
-        padding-inline: 4%;
-        padding-bottom: 3%;
-        padding-top: 2%;
+        padding-inline: clamp(30.719px, 4%, 56px);
+        padding-top: clamp(25.359px, 2%, 28px);
+        padding-bottom: clamp(38.031px, 3%, 42px);
     }
     
     #login > div {

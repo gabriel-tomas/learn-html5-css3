@@ -15,6 +15,7 @@
 html {
     font-family: "Rubik", sans-serif;
     font-size: 13px;
+    background-color: var(--color0);
 }
 
 body {
@@ -47,7 +48,7 @@ main {
 
 h1 {
     text-align: center;
-    margin-block: 3vh;
+    margin-block: clamp(7.830px, 3vh, 20.820px);
 }
 
 p {
@@ -95,7 +96,7 @@ form {
     border: none;
     color: white;
     font-size: 1.2rem;
-    margin-top: 2.2vh;
+    margin-top: clamp(5.522px, 2.2vh, 17.182px);
 }
 
 .link {
@@ -105,7 +106,7 @@ form {
 .button-esqueci {
     text-align: center;
     border: 1px solid var(--color1);
-    margin-block: 1.3vh;
+    margin-block: clamp(3.354px, 1.3vh, 9.022px);
     height: fit-content;
     padding-block: 16px;
     background-color: transparent;
