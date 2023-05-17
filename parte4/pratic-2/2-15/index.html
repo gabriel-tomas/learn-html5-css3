@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem"></div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. Image by <a class="link" href="https://www.freepik.com/free-vector/isometric-cms-concept_11788713.htm#query=ilustration&position=49&from_view=search&track=sph">Freepik</a></p>
+                <form action="login.php" method="post">
+                    <div class="form-items">
+                        <label for="iuser">
+                            <span class="material-symbols-outlined">person</span>
+                        </label>
+                        <input class="campos" type="email" name="user" id="iuser" required>
+                    </div>
+                    <div class="form-items">
+                        <label for="ipass">
+                            <span class="material-symbols-outlined">lock</span>
+                        </label>
+                        <input class="campos" type="password" name="pass" id="ipass" required minlength="8">
+                    </div>
+                    <input class="form-items button" type="submit" value="Entrar">
+                    <a class="form-items button button-esqueci link" href="#">Esqueci a senha<span class="material-symbols-outlined esqueci-symbol">mail</span></a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
