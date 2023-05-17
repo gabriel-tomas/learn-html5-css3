@@ -99,6 +99,10 @@ form {
     margin-top: clamp(5.522px, 2.2vh, 17.182px);
 }
 
+input.button {
+    cursor: pointer;
+}
+
 .link {
     color: black;
 }
