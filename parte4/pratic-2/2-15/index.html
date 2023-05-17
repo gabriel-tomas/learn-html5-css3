@@ -16,18 +16,18 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. Image by <a class="link" href="https://www.freepik.com/free-vector/isometric-cms-concept_11788713.htm#query=ilustration&position=49&from_view=search&track=sph">Freepik</a></p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div class="form-items">
                         <label for="iuser">
                             <span class="material-symbols-outlined">person</span>
                         </label>
-                        <input class="campos" type="email" name="user" id="iuser" required>
+                        <input class="campos" type="email" name="user" id="iuser" required autocomplete="email" placeholder="E-mail">
                     </div>
                     <div class="form-items">
                         <label for="ipass">
                             <span class="material-symbols-outlined">lock</span>
                         </label>
-                        <input class="campos" type="password" name="pass" id="ipass" required minlength="8">
+                        <input class="campos" type="password" name="pass" id="ipass" required minlength="8" autocomplete="current-password" placeholder="Senha">
                     </div>
                     <input class="form-items button" type="submit" value="Entrar">
                     <a class="form-items button button-esqueci link" href="#">Esqueci a senha<span class="material-symbols-outlined esqueci-symbol">mail</span></a>
