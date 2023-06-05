@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 11px;
+    font-family: "Geologica", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-block: .5vh;
+    margin-inline: .6vw;
+    z-index: 1;
+    position: relative;
+}
+
+header > h1 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: 1px solid black;
+    padding-inline: 1px;
+    display: flex;
+    align-items: center;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header nav div {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(73, 73, 73);
+}
+
+header a {
+    color: rgb(73, 73, 73);
+    text-decoration: underline;
+    position: relative;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+header a::after {
+    content: "";
+    width: 0%;
+    transition: width 200ms .05s;
+}
+
+header a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(73, 73, 73);
+}
+
+header > button {
+    background-color: black;
+    border: 0px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-inline: 8px;
+    text-transform: uppercase;
+}
+
+section {
+    height: 100vh;
+}
+
+.main-section {
+    margin-top: max(1.17vh, 9.0207px);
+}
+
+section > .main-section--h1 {
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    font-size: 13vw;
+    width: 100%;
+    font-weight: 400;
+    line-height: min(15vw, 170.65px);
+    mix-blend-mode: difference;
+}
+
+.main-section--h1 > span {
+   display: inline-block;
+   color: white;
+}
+
+.main-section--h1 > .h1--span1 {
+    background-color: #00F3FF;
+    display: inline-block;
+    color: white;
+}
+
+.main-section--h1 > .h1--span2 {
+    background-color: #FF03A4;
+}
+
+.main-section--h1 > .h1--span3 {
+    background-color: #FFDE19;
+}
+
+section > p {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+@media screen and (width > 1440px) {
+    section > .main-section--h1 {
+        font-size: 13vw;
+        line-height: min(15vw, 1000.65px);
+    }
+}
