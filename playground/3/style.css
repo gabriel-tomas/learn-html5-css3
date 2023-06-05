@@ -99,7 +99,6 @@ section > .main-section--h1 {
     width: 100%;
     font-weight: 400;
     line-height: min(15vw, 170.65px);
-    mix-blend-mode: difference;
 }
 
 .main-section--h1 > span {
@@ -109,8 +108,6 @@ section > .main-section--h1 {
 
 .main-section--h1 > .h1--span1 {
     background-color: #00F3FF;
-    display: inline-block;
-    color: white;
 }
 
 .main-section--h1 > .h1--span2 {
