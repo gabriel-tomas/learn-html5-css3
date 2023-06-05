@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onmousemove="cursor_move(event)">
+    <div id="cursor"></div>
     <header>
         <h1>Lorem ipsum</h1>
         <nav>
@@ -16,16 +17,19 @@
             <div></div>
             <a href="#">About</a>
         </nav>
-        <button>Contact</button>
+        <button onmouseover="mouse_over()" onmouseleave="mouse_leave()">Contact</button>
     </header>
     <main>
         <section class="main-section">
             <h1 class="main-section--h1">Lorem ipsum <span class="h1--span1">dolor sit,</span> amet <span class="h1--span2">consectetur</span> adipisicing <span class="h1--span3">elit.</span></h1>
-            <ul>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ul>
+            <div>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+                <button onmouseover="main_section_button_mouse_over()" onmouseleave="mouse_leave()">Learn more</button>
+            </div>
         </section>
         <section>
             <h1>Lorem ipsum dolor sit amet.</h1>
@@ -44,5 +48,6 @@
             <a href="#">Instagram</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

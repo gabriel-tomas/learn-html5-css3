@@ -14,6 +14,24 @@
 html {
     font-size: 11px;
     font-family: "Geologica", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    cursor: none;
+}
+
+#cursor {
+    background-color: rgb(218, 218, 218);
+    width: 6vw;
+    height: 6vw;
+    position: fixed;
+    border-radius: 100%;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: top 200ms ease-out, left 200ms ease-out, width 150ms, height 150ms;
+    pointer-events: none;
 }
 
 header {
@@ -54,6 +72,12 @@ header a {
 
 header a:hover {
     text-decoration: none;
+    cursor: none;
+}
+
+body:has(header a:hover) #cursor {
+    height: 10px !important;
+    width: 10px !important;
 }
 
 header a::after {
@@ -82,6 +106,20 @@ header > button {
     font-size: 1.3rem;
     padding-inline: 8px;
     text-transform: uppercase;
+    cursor: none;
+}
+
+header > button:hover {
+    background-color: rgb(218, 218, 218);
+    color: black;
+    font-weight: bold;
+}
+
+body:has(header > button:hover) #cursor {
+    height: 19px;
+    visibility: hidden;
+    border-radius: 100px;
+    transition: height 200ms, width 200ms, 100ms visibility;
 }
 
 section {
@@ -90,6 +128,9 @@ section {
 
 .main-section {
     margin-top: max(1.17vh, 9.0207px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 section > .main-section--h1 {
@@ -118,13 +159,61 @@ section > .main-section--h1 {
     background-color: #FFDE19;
 }
 
+.main-section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    margin-bottom: 8vh;
+    margin-left: .3vw;
+}
+
+.main-section ul li {
+    list-style: none;
+}
+
+.main-section div button {
+    width: max(10vw, 98.500px);
+    height: 5vh;
+    border-radius: 2000px;
+    background-color: #FF03A4;
+    font-family: "Geologica", sans-serif;
+    text-transform: uppercase;
+    font-size: max(1vw, 9.85px);
+    font-weight: 900;
+    color: white;
+    border: 2px solid rgb(36, 36, 36);
+    cursor: none;
+}
+
+.main-section div button:hover {
+    background-color: rgb(218, 218, 218);
+    color: black;
+}
+
+body:has(.main-section div button:hover) #cursor {
+    height: 5vh;
+    border-radius: 100px;
+    visibility: hidden;
+    transition: height 200ms, width 200ms, 100ms visibility;
+}
+
 section > p {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-@media screen and (width > 1440px) {
+@media screen and (width > 1200px) {
     section > .main-section--h1 {
         font-size: 13vw;
-        line-height: min(15vw, 1000.65px);
+        line-height: 20vh;
+    }
+}
+
+@media screen and (width <= 992px) {
+    header a {
+        font-size: clamp(1.3rem, 2vw, 1.5rem);
+    }
+
+    header > button {
+        font-size: clamp(1.6rem, 3vw, 1.8rem);
     }
 }
