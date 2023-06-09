@@ -1,0 +1,23 @@
+.section3 {
+    height: fit-content;
+}
+
+.section3 > div {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.section3 h1 {
+    font-size: 1vw + 1rem;
+    position: absolute;
+    left: 0px;
+}
+
+.image-container {
+    width: min(50%, 386.500px);
+}
+
+.image-container > img {
+    width: 100%;
+}
