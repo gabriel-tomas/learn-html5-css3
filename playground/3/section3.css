@@ -4,14 +4,42 @@
 
 .section3 > div {
     display: flex;
-    position: relative;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: 3vh;
+    padding-bottom: 100vh;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    position: sticky;
+    top: 8vh;
 }
 
-.section3 h1 {
+.section3 > div > div {
+    width: 30%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-container--top > h1 {
     font-size: 1vw + 1rem;
-    position: absolute;
-    left: 0px;
+}
+
+.text-container--bottom {
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+
+.text-container--bottom > button {
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 100px;
+    padding-inline: 5px;
+    border: 1px solid black;
+    font-size: 1.18rem;
 }
 
 .image-container {
