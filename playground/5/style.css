@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(.7vw + .7vh);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+header > h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+main {
+    margin-inline: calc(.7vw + .7vh);
+}
+
+main > section {
+    height: 75vh;
+    background-color: rgb(40, 40, 38);
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    border-radius: 13px;
+}
+
+section {
+    padding: min(5%, 40px);
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+}
+
+section .text-container > .text-container--text > *{
+    margin-bottom: 2%;
+}
+
+section .text-container .button-container {
+    display: flex;
+    gap: 2px;
+    position: relative;
+    width: fit-content;
+}
+
+section .text-container .button-container::after {
+    content: "";
+    background-color: rgb(224, 227, 219);
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    position: absolute;
+}
+
+section .text-container .button-container button {
+    background-color: transparent;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(224, 227, 219);
+    font-size: 1.15rem;
+    margin-top: 1%;
+}
+
+section .text-container .button-container .material-symbols-outlined {
+    color: rgb(224, 227, 219);
+}
+
+section .image-container {
+    grid-row: 2 / -1;
+    margin-top: 2%;
+}
+
+section .image-container > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 11px;
+}
+
+section h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(224, 227, 219);
+}
+
+section p {
+    font-family: "Poppins", sans-serif;
+    color: rgb(202, 203, 195);
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section .text-container {
+        grid-row: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    section .image-container {
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        margin-top: 0;
+    }
+}
